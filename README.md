@@ -6,4 +6,4 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 [www.frontendmentor.io](https://www.frontendmentor.io/)
 
-[My Profile](https://www.frontendmentor.io/profile/flaviocmb)
+My Profile - [www.frontendmentor.io/profile/flaviocmb](https://www.frontendmentor.io/profile/flaviocmb)
