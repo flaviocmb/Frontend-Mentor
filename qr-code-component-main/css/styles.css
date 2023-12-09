@@ -20,7 +20,7 @@ height: 497
     box-sizing: border-box;
 }
 
-body {
+main {
     /* background-color: hsl(0, 0%, 100%); */
     /* background-color: hsl(220, 15%, 55%); */
     /* background-color: hsl(218, 44%, 22%); */
@@ -56,7 +56,7 @@ body {
 
 .--conteiner__wrapper img {
     height: 288px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .--conteiner__text {
@@ -67,11 +67,12 @@ body {
 
 h3 {
     margin-top: 30px;
+    font-size: 1.25rem;
 }
 
 .--conteiner__text p {
     margin-top: 20px;
     font-size: 15px;
     line-height: 18px;
-    color: #777777;
+    color: #a5a5a5;
 }
