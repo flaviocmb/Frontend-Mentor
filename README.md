@@ -8,8 +8,8 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 My Profile - [www.frontendmentor.io/profile/flaviocmb](https://www.frontendmentor.io/profile/flaviocmb)
 
-Projects completed
+Projects completed:
 
-[QR Code Component Main](https://flaviocmb.github.io/Frontend-Mentor/qr-code-component-main/)
+* [QR Code Component Main](https://flaviocmb.github.io/Frontend-Mentor/qr-code-component-main/)
 
-[FAQ Accordion Main](https://flaviocmb.github.io/Frontend-Mentor/faq-accordion-main/)
+* [FAQ Accordion Main](https://flaviocmb.github.io/Frontend-Mentor/faq-accordion-main/)
