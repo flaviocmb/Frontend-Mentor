@@ -1,24 +1,9 @@
 /**
  * 
  * 
- * The first building (first real challenge) is to use mobile-first concept.
  * 
  * 
  */
-
-// const triggerButton = document.querySelectorAll(".trigger-button");
-// triggerButton.forEach(trigger => {
-//     console.log(trigger);
-//     trigger.addEventListener("click", () => {
-//         console.log(trigger.childNodes);
-//         const isOpen = trigger.parentElement.classList.contains("open");
-//         if (isOpen) {
-//             trigger.parentElement.classList.remove("open");
-//         } else {
-//             trigger.parentElement.classList.add("open");
-//         }
-//     });
-// });
 
 document.addEventListener('DOMContentLoaded', () => {
     const triggerButton = document.querySelectorAll('.trigger-button');

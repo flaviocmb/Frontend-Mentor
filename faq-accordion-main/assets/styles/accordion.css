@@ -14,6 +14,10 @@
     width: 100%;
 }
 
+.trigger-button:last-child {
+    padding-bottom: 0;
+}
+
 .trigger-button::after {
     content: '';
     display: inline-block;
@@ -60,7 +64,7 @@
 
 @media screen and (min-width: 650px) {
     .button-text {
-        width: 520px;
+        width: 490px;
     }
 }
 

@@ -66,6 +66,7 @@ main {
     background-color: var(--white);
     margin: 0 24px;
     padding: 24px 24px 0 24px;
+    /* padding: 40px 40px 0 40px; */
     max-width: 600px;
     max-height: 545px;
     border-radius: 5px;
@@ -81,6 +82,12 @@ main {
         top: 185px;
         border-radius: 15px;
         max-height: 560px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .--maincontainer {
+        padding: 40px 40px 20px 40px;
     }
 }
 
