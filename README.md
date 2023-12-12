@@ -11,4 +11,5 @@ My Profile - [www.frontendmentor.io/profile/flaviocmb](https://www.frontendmento
 Projects completed
 
 [QR Code Component Main](https://flaviocmb.github.io/Frontend-Mentor/qr-code-component-main/)
+
 [FAQ Accordion Main](https://flaviocmb.github.io/Frontend-Mentor/faq-accordion-main/)
