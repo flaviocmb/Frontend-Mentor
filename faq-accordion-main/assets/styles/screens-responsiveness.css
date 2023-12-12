@@ -1,0 +1,104 @@
+/*
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightpink: hsl(275, 100%, 97%);
+    --grayishpurple: hsl(292, 16%, 49%);
+    --darkpurple: hsl(292, 42%, 14%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* because of the main width of 100vw that generates scrolling */
+}
+
+body {
+    background: var(--lightpink);
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+@media screen and (min-width: 376px) {
+    header img {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        background-image: url("../images/background-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 1440px;
+        height: 320px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: -1;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 20px); /* 20px for the footer */
+    width: 100vw;
+}
+
+.--maincontainer {
+    position: absolute;
+    top: 143px;
+    background-color: var(--white);
+    margin: 0 24px;
+    padding: 24px 24px 0 24px;
+    max-width: 600px;
+    max-height: 545px;
+    border-radius: 5px;
+    height: auto;
+    overflow-y: auto;
+    scrollbar-color: var(--grayishpurple) transparent; /* firefox */
+    scrollbar-width: thin; /* firefox */
+}
+
+@media screen and (min-width: 376px) {
+    .--maincontainer {
+        top: 185px;
+        border-radius: 15px;
+        max-height: 560px;
+    }
+}
+
+.--maincontainer::-webkit-scrollbar-track {
+    display: none;
+}
+
+.--maincontainer::-webkit-scrollbar-thumb {
+    background-color: var(--grayishpurple);
+    border-radius: 10px;
+}
+
+.--maincontainer::-webkit-scrollbar {
+    width: 6px;
+    margin: 10px 0;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.08);
+}

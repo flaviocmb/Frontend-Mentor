@@ -1,0 +1,85 @@
+:root {
+    --hovertext: #AD28EB;
+}
+
+.trigger-button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    text-align: start;
+    width: 100%;
+}
+
+.trigger-button::after {
+    content: '';
+    display: inline-block;
+    height: 31px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/icon-plus.svg');
+    transition: .25s;
+}
+
+.trigger-button.expanded::after {
+    transform: rotate(180deg);
+    background-image: url('../images/icon-minus.svg');
+}
+
+.button-text {
+    width: 220px;
+}
+
+@media screen and (min-width: 400px) {
+    .button-text {
+        width: 265px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .button-text {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .button-text {
+        width: 410px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .button-text {
+        width: 470px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .button-text {
+        width: 520px;
+    }
+}
+
+.button-text:hover {
+    color: var(--hovertext);
+    cursor: pointer;
+}
+
+.open {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+    transition: opacity 0.25s ease-in-out;
+    width: 95%; /* must be percentage because of the responsiveness */
+}
+
+.content {
+    margin-bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+}

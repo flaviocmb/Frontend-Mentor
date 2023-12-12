@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./assets/styles/screens-responsiveness.css" />
+    <link rel="stylesheet" href="./assets/styles/accordion.css" />
+
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 12px;
+        /* position: fixed; */
+        /* bottom: 20px; */
+        text-align: center;
+        width: 100vw;
+        white-space: nowrap;
+        /* background-color: blueviolet; */
+      }
+      .attribution a {
+        /* color: hsl(228, 45%, 44%); */
+        color: hsl(141, 45%, 44%);
+      }
+      @media screen and (max-width: 340px) {
+        .attribution {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/images/background-pattern-mobile.svg" alt="">
+    </header>
+    <main role="main">
+      <div class="--maincontainer">
+        <div id="wrapper-title">
+          <h1>FAQs</h1>
+        </div>
+        <section>
+          <button class="trigger-button" type="button">
+            <h2 class="button-text">What is Frontend Mentor, and how will it help me?</h2>
+          </button>
+
+          <p class="content">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+          <div class="line"></div>
+        </section>
+        <section>
+          <button class="trigger-button" type="button">
+            <h2 class="button-text">Is Frontend Mentor free?</h2>
+          </button>
+          <p class="content">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+          <div class="line"></div>
+        </section>
+        <section>
+          <button class="trigger-button" type="button">
+            <h2 class="button-text">Can I use Frontend Mentor projects in my portfolio?</h2>
+          </button>
+          <p class="content">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+          <div class="line"></div>
+        </section>
+        <section>
+          <button class="trigger-button" type="button">
+            <h2 class="button-text">How can I get help if I'm stuck on a Frontend Mentor challenge?</h2>
+          </button>
+
+          <p class="content">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer role="footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Flávio César</a>.
+      </div>
+    </footer>
+    <script src="./assets/scripts/scripts.js" defer></script>
+  </body>
+</html>
