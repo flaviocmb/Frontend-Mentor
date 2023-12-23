@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isOpen) {
                 trigger.parentElement.children[1].classList.add("content");
                 trigger.parentElement.children[1].classList.remove("open");
-                trigger.parentElement.children[0].classList.remove("expanded");
+                trigger.parentElement.children[0].classList.remove("trigger-button--expanded");
             } else {
                 trigger.parentElement.children[1].classList.remove("content");
                 trigger.parentElement.children[1].classList.add("open");
-                trigger.parentElement.children[0].classList.add("expanded");
+                trigger.parentElement.children[0].classList.add("trigger-button--expanded");
             }
         });
     })

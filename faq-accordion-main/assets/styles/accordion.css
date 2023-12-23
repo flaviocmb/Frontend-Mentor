@@ -29,11 +29,12 @@
     transition: .25s;
 }
 
-.trigger-button.expanded::after {
+.trigger-button--expanded::after {
     transform: rotate(180deg);
     background-image: url('../images/icon-minus.svg');
 }
 
+/* garante a consistência da icon-plus/minus */
 .button-text {
     width: 220px;
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./assets/style/index.css" />
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 12px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .attribution a {
+      /* color: hsl(228, 45%, 44%); */
+      color: hsl(141, 45%, 44%);
+    }
+    @media screen and (max-width: 340px) {
+      .attribution {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="l-header">
+    <div class="m-header">
+      <img class="m-header__img" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+    </div>
+  </header>
+
+  <main class="l-main">
+
+    <div class="m-principal">
+      
+      <div class="m-principal__content">
+        <section class="m-principal__content-form">
+
+          <p class="m-principal__title s-margin-bottom">Stay updated!</p>
+
+          <p class="m-principal__paragraph s-margin-bottom s-line-height">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <ul class="m-principal__item-content s-margin-bottom s-list-style-type">
+            <li class="m-principal__item-list s-icon-list s-line-height">Product discovery and building what matters</li>
+            <li class="m-principal__item-list s-icon-list s-line-height">Measuring to ensure updates are a success</li>
+            <li class="m-principal__item-list s-icon-list s-line-height">And much more!</li>
+          </ul>
+
+          <!-- Sign-up form start -->
+          <div class="m-principal__form-container s-margin-top">
+            <div class="m-principal__form"> 
+                <label class="m-principal__label s-margin-bottom-label" for="email">Email address</label>
+                <input class="m-principal__input s-margin-bottom" type="email" id="email" placeholder="email@company.com">
+                <button class="m-button m-principal__button s-button-hover">Subscribe to monthly newsletter</button>                
+            </div>
+          </div>
+          <!-- Sign-up form end -->
+        </section>
+
+        <section class="m-principal__side-img">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+        </section>
+      </div>
+    </div>
+
+    <!-- To-Do: alterar a classe m-principal__title -->
+    <div class="m-success">
+      <!-- Success message start -->
+      <div class="m-success__outer-container">
+        <div class="m-success__inner-container">
+          <img class="m-success__img" src="./assets/images/icon-success.svg" alt="">
+          <div class="m-success__text">
+            <p class="m-principal__title">Thanks for subscribing!</p>
+            <p class="s-line-height">
+              A confirmation email has been sent to 
+              <span id="valid-email" style="font-family: 'Roboto-Bold', sans-serif;">ash@loremcompany.com</span>.
+              Please open it and click the button inside to confirm your subscription.
+            </p>
+          </div>
+        </div>
+        <button class="m-button m-success__button s-button-hover">Dismiss message</button>
+      </div>
+
+      <!-- Success message end -->
+    </div>
+  </main>
+
+  <footer class="l-footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/flaviocmb" target="_blank">Flávio César</a>.
+    </div>
+  </footer>
+  <script src="./assets/script/index.js" defer></script>
+</body>
+</html>

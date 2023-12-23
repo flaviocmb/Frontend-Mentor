@@ -80,7 +80,7 @@ main {
 
 @media screen and (min-width: 376px) {
     .--maincontainer {
-        top: 175px;
+        top: 170px;
         border-radius: 15px;
         max-height: 560px;
     }

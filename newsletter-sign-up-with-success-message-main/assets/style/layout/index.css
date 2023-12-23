@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+    .l-main {
+        flex: 1;
+    }
+}
+
+.l-footer {
+    padding: 12px 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .l-footer {
+        color: var(--white);
+        position: absolute;
+        bottom: 12px;
+    }
+}
