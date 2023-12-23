@@ -1,3 +1,5 @@
+/* SCMACSS - https://smacss.com/ */
+
 @import url('./basic/index.css');
 @import url('./layout/index.css');
 @import url('./module/index.css');

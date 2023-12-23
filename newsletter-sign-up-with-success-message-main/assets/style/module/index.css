@@ -44,7 +44,7 @@
     align-items: center;
     padding: 1.5rem;
     background-color: var(--white);
-    border-radius: 30px;
+    border-radius: 40px;
     gap: 3%;
 }
 
@@ -70,7 +70,8 @@
 
 @media screen and (min-width: 768px) {
     .m-principal__title {
-        font-size: 54px;
+        /* font-size: 46px; */
+        font-size: 56px;
     }
 }
 
