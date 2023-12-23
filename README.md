@@ -13,3 +13,5 @@ Projects completed:
 * [QR Code Component Main](https://flaviocmb.github.io/Frontend-Mentor/qr-code-component-main/)
 
 * [FAQ Accordion Main](https://flaviocmb.github.io/Frontend-Mentor/faq-accordion-main/)
+
+* [Newsletter Sign Up with Success Message](https://flaviocmb.github.io/Frontend-Mentor/newsletter-sign-up-with-success-message-main/)
