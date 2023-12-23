@@ -6,7 +6,7 @@
     color: var(--white);
     background-color: var(--dark-slate-grey);
     border: none;
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: 14px;
 }
 
@@ -44,7 +44,7 @@
     align-items: center;
     padding: 1.5rem;
     background-color: var(--white);
-    border-radius: 20px;
+    border-radius: 30px;
     gap: 3%;
 }
 
@@ -70,7 +70,7 @@
 
 @media screen and (min-width: 768px) {
     .m-principal__title {
-        font-size: 46px;
+        font-size: 54px;
     }
 }
 
