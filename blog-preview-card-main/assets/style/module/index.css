@@ -1,0 +1,125 @@
+.m-attribution a {
+    color: hsl(141, 45%, 44%);
+}
+
+.m-oc {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    max-width: 325px;
+    max-height: 499px;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    padding: 22px;
+    /* box-shadow: 10px 10px 0px 0px #000; */
+}
+
+@media screen and (min-width: 768px) {
+    .m-oc {
+        max-width: 382px;
+        max-height: 519px;
+    }
+}
+
+.m-oc__banner {
+    max-width: 279px;
+    max-height: 200px;
+    line-height: 0;
+}
+
+.m-oc__banner img {
+    width: 279px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .m-oc__banner img {
+        width: 336px;
+        height: 201px;
+    }
+}
+
+.m-oc__tag {
+    background-color: var(--yellow);
+    max-width: 75px;
+    max-height: 26px;
+    padding: 6px 11px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Figtree-ExtraBold';
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .m-oc__tag {
+        max-width: 82px;
+        max-height: 30px;
+        padding: 7px 13px;
+        font-size: 14px;
+    }
+}
+
+.m-oc__publish {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .m-oc__publish {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+}
+
+.m-oc__title {
+    font-family: 'Figtree-ExtraBold';
+    font-size: 20px;
+    margin: 18px 0 18px 0;
+}
+
+.m-oc__title:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .m-oc__title {
+        font-size: 24px;
+    }
+}
+
+.m-oc__user-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.m-oc__text {
+    font-size: 14px;
+    color: var(--grey);
+    margin-bottom: 22px;
+    line-height: 20px;
+    font-family: 'Figtree-Regular';
+}
+
+@media screen and (min-width: 768px) {
+    .m-oc__text {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Figtree-Regular';
+    }
+}
+
+.m-oc__avatar {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.m-oc__name {
+    font-family: 'Figtree-ExtraBold';
+}
