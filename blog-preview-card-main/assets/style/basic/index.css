@@ -35,5 +35,8 @@ body {
     font-family: 'Figtree-Regular', sans-serif;
     font-size: 1rem;
     background-color: var(--yellow);
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
