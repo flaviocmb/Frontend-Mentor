@@ -50,7 +50,7 @@
     max-height: 26px;
     padding: 6px 11px;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-family: 'Figtree-ExtraBold';
     margin-top: 24px;
 }
@@ -60,25 +60,25 @@
         max-width: 82px;
         max-height: 30px;
         padding: 7px 13px;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }
 
 .m-oc__publish {
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
     .m-oc__publish {
-        font-size: 14px;
+        font-size: 0.875rem;
         margin-top: 16px;
     }
 }
 
 .m-oc__title {
     font-family: 'Figtree-ExtraBold';
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 18px 0 18px 0;
 }
 
@@ -89,7 +89,7 @@
 
 @media screen and (min-width: 768px) {
     .m-oc__title {
-        font-size: 24px;
+        font-size: 1.5rem;
         display: inline-block;
     }
 }
@@ -101,17 +101,17 @@
 }
 
 .m-oc__text {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--grey);
     margin-bottom: 22px;
-    line-height: 20px;
+    line-height: 1.25rem;
     font-family: 'Figtree-Regular';
 }
 
 @media screen and (min-width: 768px) {
     .m-oc__text {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         font-family: 'Figtree-Regular';
     }
 }
