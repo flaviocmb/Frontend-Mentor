@@ -8,75 +8,68 @@
     /* justify-content: space-between; */
     border: 1px solid var(--black);
     background-color: var(--white);
-    max-width: 20.3125rem; /* width: 325px, height: 499px */
+    max-width: 20.4375rem; /* width: 327px, height: 501px (both including border) */
     width: 100%;
     border-radius: 18px;
-    padding: 22px;
+    padding: 23px;
     box-shadow: 8px 8px 0px 0px #000;
 }
 
 @media screen and (min-width: 768px) {
     .m-oc {
-        max-width: 23.875rem; /* width: 382px, height: 519px */
+        max-width: 24rem; /* width: 384px, height: 521px (both including border) */
     }
 }
 
-.m-oc__banner {
-    max-width: 279px;
-    max-height: 200px;
-    line-height: 0;
-}
-
 .m-oc__banner img {
-    width: 279px;
-    height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    width: 100%; /* width: 279px */
+    height: 12.5rem; /* height: 200px */
 }
 
 @media screen and (min-width: 768px) {
     .m-oc__banner img {
-        width: 336px;
-        height: 201px;
+        width: 100%; /* 336px */
+        height: auto; /* 201px */
     }
 }
 
 .m-oc__tag {
     background-color: var(--yellow);
-    max-width: 75px;
-    max-height: 26px;
-    padding: 6px 11px;
+    width: 4.6875rem; /* 75 */
+    height: 1.625rem; /* 26 */
+    padding: 0.375rem 0.6875rem; /* 6px 11px */
     border-radius: 5px;
     font-size: 0.8125rem;
     font-family: 'Figtree-ExtraBold';
-    margin-top: 24px;
+    margin-top: 23px;
 }
 
 @media screen and (min-width: 768px) {
     .m-oc__tag {
-        max-width: 82px;
-        max-height: 30px;
-        padding: 7px 13px;
+        width: 5.125rem; /* 82px */
+        height: 1.875rem; /* 30px */
+        padding: 0.4375rem 0.8125rem; /* 7px 13px */
         font-size: 0.875rem;
     }
 }
 
 .m-oc__publish {
     font-size: 0.75rem;
-    margin-top: 16px;
+    margin-top: 15px;
 }
 
 @media screen and (min-width: 768px) {
     .m-oc__publish {
         font-size: 0.875rem;
-        margin-top: 16px;
     }
 }
 
 .m-oc__title {
     font-family: 'Figtree-ExtraBold';
     font-size: 1.25rem;
-    margin: 18px 0 18px 0;
+    margin: 18px 0;
 }
 
 .m-oc__title:hover {
@@ -87,7 +80,7 @@
 @media screen and (min-width: 768px) {
     .m-oc__title {
         font-size: 1.5rem;
-        display: inline-block;
+        margin: 17px 0;
     }
 }
 
@@ -114,10 +107,10 @@
 }
 
 .m-oc__avatar {
-    max-width: 32px;
-    max-height: 32px;
+    min-width: 2rem; /* prevent smaller than this */
 }
 
 .m-oc__name {
     font-family: 'Figtree-ExtraBold';
+    font-size: 0.875rem;
 }

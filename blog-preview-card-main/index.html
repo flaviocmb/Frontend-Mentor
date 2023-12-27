@@ -9,25 +9,51 @@
   <link rel="stylesheet" href="./assets/style/style.css">
 
   <title>Frontend Mentor | Blog preview card</title>
-
+  <style>
+    /* screen reader */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="sr-only">
+      <h1>Blog preview card challenge</h1>
+    </div>
+  </header>
   <main class="l-main">
     <!-- outer-container -->
     <div class="m-oc">
       <div class="m-oc__banner">
-        <img src="./assets/images/illustration-article.svg" alt="">
+        <!-- <img alt="" src="./assets/images/illustration-article.svg" width="279" height="200" loading="lazy"> -->
+        <img alt="" src="./assets/images/illustration-article.svg" loading="lazy">
       </div>
       <p class="m-oc__tag">Learning</p>
       <p class="m-oc__publish">Published 21 Dec 2023</p>
-      <h1 class="m-oc__title">HTML &amp; CSS foundations</h1>
+      <p class="m-oc__title">HTML &amp; CSS foundations</p>
       <p class="m-oc__text">
         These languages are the backbone of 
         every website, defining structure, 
         content, and presentation.
       </p>
       <div class="m-oc__user-wrapper">
-        <img class="m-oc__avatar" src="./assets/images/image-avatar.webp" alt="">
+        <figure>
+          <picture>
+            <source srcset="./assets/images/image-avatar.webp" type="image/webp">
+            <source srcset="./assets/images/image-avatar.png" type="image/png">
+            <img src="./assets/images/image-avatar.webp" width="32" height="32" alt="Imagem de avatar">
+          </picture>          
+          <figcaption class="sr-only">Sua legenda aqui</figcaption>
+        </figure>
+        
         <p class="m-oc__name">Greg Hooper</p>
       </div>
     </div>
@@ -36,7 +62,7 @@
     <div class="m-attribution">
       <p>
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/flaviocmb" target="_blank">Flávio César</a>.
+        Coded by <a href="https://github.com/flaviocmb" target="_blank"><span class="s-nowrap">Flávio César</span></a>.
       </p>
     </div>
   </footer>
