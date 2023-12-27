@@ -1,3 +1,11 @@
 .s-nowrap {
     white-space: nowrap;
 }
+
+.s-anchor {
+    color: var(--black);
+}
+
+.s-anchor:hover {
+    color: var(--yellow);
+}
