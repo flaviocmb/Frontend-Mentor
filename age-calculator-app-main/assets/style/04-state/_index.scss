@@ -1,0 +1,54 @@
+// Pixels to rem
+@function rem($pixels) {
+    $base-font-size: 16; //baseline
+    @return calc(($pixels / $base-font-size) * 1rem);
+}
+
+.s-nowrap {
+    white-space: nowrap;
+}
+
+.s-display-flex {
+    display: flex;
+}
+
+.s-flex-direction__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.s-input-number {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: rem(20);
+    letter-spacing: 0.02rem;
+    max-width: 10rem;
+    max-height: 4.5rem;
+    width: 100%;
+    height: 3.375rem;
+    border-radius: 8px;
+    padding: 0.75rem 0 0.75rem 1rem;
+    border: 1px solid var(--light-grey);
+    caret-color: var(--purple);
+    color: var(--off-black);
+    cursor: pointer;
+}
+
+.s-input-number::-webkit-inner-spin-button,
+.s-input-number::-webkit-outer-spin-button,
+.s-input-number {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.s-input-number:focus {
+    border: 1px solid var(--purple);
+    outline: none;
+}
+
+.s-input-margin-top {
+    margin-top: 4px;
+}
+
+.s-margin-right {
+    margin-right: 0.9375rem; /* 15px */
+}

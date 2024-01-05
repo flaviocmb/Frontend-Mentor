@@ -1,0 +1,258 @@
+@layer basic, layout, module, state, theme;
+@layer settings {
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-ExtraBold";
+    src: url("../fonts/Poppins-ExtraBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-Italic";
+    src: url("../fonts/Poppins-Italic.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-BoldItalic";
+    src: url("../fonts/Poppins-BoldItalic.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-ExtraBoldItalic";
+    src: url("../fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  }
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* Prevent font size inflation */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+  /* Remove default margin in favour of better control in authored CSS */
+  body, h1, h2, h3, h4, p,
+  figure, blockquote, dl, dd {
+    margin-block-end: 0;
+  }
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role=list],
+  ol[role=list] {
+    list-style: none;
+  }
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+  /* Set shorter line heights on headings and interactive elements */
+  h1, h2, h3, h4,
+  button, input, label {
+    line-height: 1.1;
+  }
+  /* Balance text wrapping on headings */
+  h1, h2,
+  h3, h4 {
+    text-wrap: balance;
+  }
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+  }
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  /* Inherit fonts for inputs and buttons */
+  input, button,
+  textarea, select {
+    font: inherit;
+  }
+  /* Make sure textareas without a rows attribute are not tiny */
+  textarea:not([rows]) {
+    min-height: 10em;
+  }
+  /* Anything that has been anchored to should have extra scroll margin */
+  :target {
+    scroll-margin-block: 5ex;
+  }
+  :root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+  }
+  body {
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins-Regular", sans-serif;
+  }
+  fieldset {
+    border: none;
+  }
+  button[type=submit] {
+    cursor: pointer;
+    /* This helps visually indicate to users that the element 
+    is clickable and interactive. When the cursor changes to 
+    a hand icon on hover, users typically associate this with 
+    the ability to click. */
+  }
+  a {
+    text-decoration: none;
+  }
+  label {
+    font-family: "Poppins-Bold", sans-serif;
+    text-transform: uppercase;
+    color: var(--smokey-grey);
+    font-size: 0.75rem;
+    letter-spacing: 0.18rem;
+  }
+}
+@layer tools {
+  .l-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .l-footer {
+    padding: 10px;
+  }
+}
+@layer generics {
+  :root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+  }
+  .oc-container {
+    background-color: var(--white);
+    margin: auto 16px;
+    padding: 48px 24px;
+    width: 100%;
+    max-width: 52.5rem;
+    border-radius: 24px;
+    border-bottom-right-radius: 100px;
+  }
+  .m-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 4.0625rem 0;
+  }
+  @media screen and (min-width: 768px) {
+    .m-button {
+      justify-content: flex-end;
+    }
+  }
+  .m-button__line {
+    width: 100%;
+    height: 2px; /* it doesn't change */
+    background-color: var(--light-grey);
+  }
+  .btn-circle {
+    position: absolute;
+    background-color: var(--purple);
+    border-radius: 50%;
+    border: none;
+    padding: 1.25rem;
+    width: 4.125rem;
+    height: 4.125rem;
+  }
+  @media screen and (min-width: 768px) {
+    .btn-circle {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  .btn-figure {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-circle:hover {
+    background-color: var(--off-black);
+  }
+  .m-countdown {
+    display: flex;
+    flex-direction: column;
+  }
+  .m-countdown > p {
+    font-family: "Poppins-ExtraBoldItalic", sans-serif;
+    font-size: 3.375rem;
+    letter-spacing: -0.0625rem;
+    line-height: 1.1;
+    color: var(--off-black);
+  }
+  .m-countdown__span {
+    color: var(--purple);
+    letter-spacing: 0.1875rem;
+  }
+}
+@layer elements {
+  .s-nowrap {
+    white-space: nowrap;
+  }
+  .s-display-flex {
+    display: flex;
+  }
+  .s-flex-direction__column {
+    display: flex;
+    flex-direction: column;
+  }
+  .s-input-number {
+    font-family: "Poppins-Bold", sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.02rem;
+    max-width: 10rem;
+    max-height: 4.5rem;
+    width: 100%;
+    height: 3.375rem;
+    border-radius: 8px;
+    padding: 0.75rem 0 0.75rem 1rem;
+    border: 1px solid var(--light-grey);
+    caret-color: var(--purple);
+    color: var(--off-black);
+    cursor: pointer;
+  }
+  .s-input-number::-webkit-inner-spin-button,
+  .s-input-number::-webkit-outer-spin-button,
+  .s-input-number {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .s-input-number:focus {
+    border: 1px solid var(--purple);
+    outline: none;
+  }
+  .s-input-margin-top {
+    margin-top: 4px;
+  }
+  .s-margin-right {
+    margin-right: 0.9375rem; /* 15px */
+  }
+}
+@layer objects {}
+
+/*# sourceMappingURL=index.css.map */

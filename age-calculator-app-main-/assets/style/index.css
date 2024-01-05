@@ -1,0 +1,56 @@
+@layer basic, layout, module, state, theme;
+@layer settings {
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-ExtraBoldItalic";
+    src: url("../fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  }
+  :root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+  }
+  body {
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins-Regular", sans-serif;
+  }
+  fieldset {
+    border: none;
+  }
+  button[type=submit] {
+    cursor: pointer;
+    /* This helps visually indicate to users that the element 
+    is clickable and interactive. When the cursor changes to 
+    a hand icon on hover, users typically associate this with 
+    the ability to click. */
+  }
+  a {
+    text-decoration: none;
+  }
+  label {
+    font-family: "Poppins-Bold", sans-serif;
+    text-transform: uppercase;
+    color: var(--smokey-grey);
+    font-size: 0.75rem;
+    letter-spacing: 0.18rem;
+  }
+}
+@layer tools {}
+@layer generics {}
+@layer elements {}
+@layer objects {}
+
+/*# sourceMappingURL=index.css.map */

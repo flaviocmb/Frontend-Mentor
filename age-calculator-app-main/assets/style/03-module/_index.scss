@@ -1,0 +1,91 @@
+// Pixels to rem
+@function rem($pixels) {
+    $base-font-size: 16; //baseline
+    @return calc(($pixels / $base-font-size) * 1rem);
+}
+
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+.oc-container {
+    background-color: var(--white);
+    margin: auto 16px;
+    padding: 48px 24px;
+    width: 100%;
+    max-width: rem(840);
+    border-radius: 24px;
+    border-bottom-right-radius: 100px;
+}
+
+.m-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: rem(65) 0;
+}
+
+@media screen and (min-width: 768px) {
+    .m-button {
+        justify-content: flex-end;
+    }
+}
+
+.m-button__line {
+    width: 100%;
+    height: 2px; /* it doesn't change */
+    background-color: var(--light-grey);
+}
+
+.btn-circle {
+    position: absolute;
+    background-color: var(--purple);
+    border-radius: 50%;
+    border: none;
+    padding: rem(20);
+    width: rem(66);
+    height: rem(66);
+}
+
+@media screen and (min-width: 768px) {
+    .btn-circle {
+        // padding: rem(26) rem(25);
+        width: rem(96);
+        height: rem(96);
+    }
+}
+
+.btn-figure {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-circle:hover {
+    background-color: var(--off-black);
+}
+
+.m-countdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.m-countdown > p {
+    // font-family: 'Poppins-BoldItalic', sans-serif;
+    font-family: 'Poppins-ExtraBoldItalic', sans-serif;
+    font-size: rem(54);
+    letter-spacing: rem(-1);
+    line-height: 1.1;
+    color: var(--off-black);
+}
+
+.m-countdown__span {
+    color: var(--purple);
+    letter-spacing: rem(3);
+}

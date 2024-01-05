@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/style/index.scss">
+  <!-- <link rel="stylesheet" type="text/scss" href="./assets/style/index.scss"> -->
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style type="text/css">
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+    .attribution { font-size: 0.75rem; text-align: center; }
+    .attribution a { color: hsl(141, 45%, 44%); }
+  </style>
+</head>
+<body class="s-flex-direction__column">
+  <header>
+    <h1 class="sr-only">
+      This is an age calculator
+    </h1>
+  </header>
+  <main class="l-main">
+    <!-- outer container -->
+    <div class="oc-container">
+      <form class="m-form" action="">
+        <fieldset class="s-display-flex">
+          <legend class="sr-only">You have to put your day, month and year of birth date</legend>
+          <div class="s-flex-direction__column s-margin-right">
+            <label class="s-label-font" for="day">Day</label>
+            <input class="s-input-number s-input-margin-top" type="number" name="" id="day" placeholder="DD">
+          </div>
+          <div class="s-flex-direction__column s-margin-right">
+            <label for="month">Month</label>
+            <input class="s-input-number s-input-margin-top" type="number" name="" id="month" placeholder="MM">
+          </div>
+          <div class="s-flex-direction__column">
+            <label for="year">Year</label>
+            <input class="s-input-number s-input-margin-top" type="number" name="" id="year" placeholder="YYYY">
+          </div>
+        </fieldset>
+        <div class="m-button">
+          <div class="m-button__line"></div>
+          <button type="submit" class="btn-circle">
+            <picture class="btn-figure">
+              <source media="(min-width: 768px)" srcset="./assets/images/icon-arrow-stroke-width2.svg" type="image/svg+xml"/>
+              <img src="./assets/images/icon-arrow-stroke-width3.svg" alt="downward arrow icon drawn in svg">
+            </picture>
+          </button>
+        </div>
+      </form>
+      <div class="m-countdown">
+        <p>
+          <span class="m-countdown__span">--</span> years
+        </p>
+        <p>
+          <span class="m-countdown__span">--</span> months
+        </p>
+        <p>
+          <span class="m-countdown__span">--</span> days
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer class="l-footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/flaviocmb" target="_blank"><span class="s-nowrap">Flávio César</span></a>.
+    </div>
+  </footer>
+</body>
+</html>
