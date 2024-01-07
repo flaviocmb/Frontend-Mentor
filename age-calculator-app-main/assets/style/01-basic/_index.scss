@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: var(--light-grey);
+    background-color: var(--off-white);
     display: flex;
     flex-direction: column;
     font-family: 'Poppins-Regular', sans-serif;
@@ -38,7 +38,7 @@ label {
     font-family: 'Poppins-Bold', sans-serif;
     text-transform: uppercase;
     color: var(--smokey-grey);
-    font-size: 0.75rem;
-    // font-weight: 800;
+    font-size: 0.875rem;
     letter-spacing: 0.18rem;
+    margin-bottom: 0.375rem;
 }

@@ -24,6 +24,10 @@
     }
     .attribution { font-size: 0.75rem; text-align: center; }
     .attribution a { color: hsl(141, 45%, 44%); }
+    .attribution a:hover { text-decoration: underline; }
+    @media screen and (min-width: 768px) {
+      .attribution { position: absolute; bottom: 10px; left: 50%; transform: translate(-50%);}
+    }
   </style>
 </head>
 <body class="s-flex-direction__column">
@@ -41,17 +45,20 @@
           <div class="s-flex-direction__column s-margin-right">
             <label class="s-label-font" for="day">Day</label>
             <input class="s-input-number s-input-margin-top" type="number" name="" id="day" placeholder="DD">
+            <div class="s-error-message s-day-error">This message will be showing instructions to correct your typo</div>
           </div>
           <div class="s-flex-direction__column s-margin-right">
             <label for="month">Month</label>
             <input class="s-input-number s-input-margin-top" type="number" name="" id="month" placeholder="MM">
+            <div class="s-error-message s-month-error">This message will be showing instructions to correct your typo</div>
           </div>
           <div class="s-flex-direction__column">
             <label for="year">Year</label>
             <input class="s-input-number s-input-margin-top" type="number" name="" id="year" placeholder="YYYY">
+            <div class="s-error-message s-year-error">This message will be showing instructions to correct your typo</div>
           </div>
         </fieldset>
-        <div class="m-button">
+        <div class="m-button s-clear">
           <div class="m-button__line"></div>
           <button type="submit" class="btn-circle">
             <picture class="btn-figure">
@@ -63,13 +70,13 @@
       </form>
       <div class="m-countdown">
         <p>
-          <span class="m-countdown__span">--</span> years
+          <span class="m-countdown__span">38</span> years
         </p>
         <p>
-          <span class="m-countdown__span">3</span> months
+          <span class="m-countdown__span">- -</span> months
         </p>
         <p>
-          <span class="m-countdown__span">26</span> days
+          <span class="m-countdown__span">- -</span> days
         </p>
       </div>
     </div>
@@ -80,7 +87,6 @@
       Coded by <a href="https://www.frontendmentor.io/profile/flaviocmb" target="_blank"><span class="s-nowrap">Flávio César</span></a>.
     </div>
   </footer>
-  <script src="./assets/scripts/calcular-idade.js"></script>
   <script src="./assets/scripts/index.js"></script>
 </body>
 </html>

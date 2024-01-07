@@ -20,11 +20,12 @@
 .s-input-number {
     font-family: 'Poppins-Bold', sans-serif;
     font-size: rem(20);
+    opacity: 0.8;
     letter-spacing: 0.02rem;
     max-width: 10rem;
     max-height: 4.5rem;
     width: 100%;
-    height: 3.375rem;
+    height: rem(54);
     border-radius: 8px;
     padding: 0.75rem 0 0.75rem 1rem;
     border: 1px solid var(--light-grey);
@@ -45,10 +46,44 @@
     outline: none;
 }
 
+@media screen and (min-width: 768px) {
+    .s-input-number {
+        height: rem(72);
+        font-size: rem(32);
+    }
+}
+
 .s-input-margin-top {
     margin-top: 4px;
 }
 
 .s-margin-right {
     margin-right: 0.9375rem; /* 15px */
+}
+
+.s-error-message {
+    display: none;
+    color: var(--light-red);
+    opacity: 0.8;
+    font-size: rem(10);
+    font-family: 'Poppins-Italic', sans-serif;
+    margin-top: rem(7);
+}
+
+@media screen and (min-width: 768px) {
+    .s-error-message {
+        font-size: rem(14);
+    }
+}
+
+.s-day-error {
+    display: none;
+}
+
+.s-month-error {
+    display: none;
+}
+
+.s-year-error {
+    display: none;
 }
