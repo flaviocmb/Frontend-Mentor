@@ -17,6 +17,3 @@
 
 # Avoid this path
 /assets/scripts/backup
-
-# Avoid this file
-descricao.md

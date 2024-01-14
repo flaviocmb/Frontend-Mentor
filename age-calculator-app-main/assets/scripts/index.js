@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
         inputM = 0;
         inputD = currentDay - inputD;
       } else if (currentDay < inputD) {
-        inputY = currentYear - inputY - 1;
+        inputY = (currentYear - inputY) - 1;
         inputM = 11;
         const temp = 31 - inputD; //calculation formula ((31 - (day entry > current day)) + current day)
         inputD = temp + currentDay;
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
       inputM = remainingMonths(inputM);
       remainingDays();
     } else if (currentMonth < inputM) {
-      inputY = currentYear - inputY - 1;
+      inputY = (currentYear - inputY) - 1;
       inputM = remainingMonths(inputM);
       remainingDays();
     }

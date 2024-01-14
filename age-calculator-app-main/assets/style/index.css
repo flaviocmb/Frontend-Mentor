@@ -160,6 +160,7 @@
   @media screen and (min-width: 768px) {
     .oc-container {
       padding: 3.5rem;
+      border-bottom-right-radius: 200px;
     }
   }
   .m-button {
