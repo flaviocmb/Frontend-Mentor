@@ -8,21 +8,25 @@
 @font-face {
     font-family: 'Figtree-Italic';
     src: url('../../fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Figtree-Regular';
     src: url('../../fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Figtree-SemiBold';
     src: url('../../fonts/static/Figtree-SemiBold.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Figtree-ExtraBold';
     src: url('../../fonts/static/Figtree-ExtraBold.ttf');
+    font-display: swap;
 }
 
 * {
