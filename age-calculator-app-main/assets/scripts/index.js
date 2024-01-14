@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
       //To-Do: improve this code
       if (currentDay === inputD) {
         inputY = currentYear - inputY;
-        inputM = 12; //Freud will tell us the truth
+        inputM = 0; //Freud will tell us the truth
         inputD = 0;
       } else if (currentDay > inputD) {
         inputY = currentYear - inputY;
