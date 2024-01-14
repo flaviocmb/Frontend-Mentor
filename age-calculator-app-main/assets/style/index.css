@@ -133,9 +133,6 @@
     justify-content: center;
     align-items: center;
   }
-  .l-footer {
-    padding: 10px;
-  }
 }
 @layer generics {
   :root {
