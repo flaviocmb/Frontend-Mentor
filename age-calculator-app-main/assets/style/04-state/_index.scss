@@ -58,7 +58,13 @@
 }
 
 .s-margin-right {
-    margin-right: 0.9375rem; /* 15px */
+    margin-right: rem(15); /* 15px */
+}
+
+@media screen and (min-width: 768px) {
+    .s-margin-right {
+        margin-right: rem(32); /* 15px */
+    }
 }
 
 .s-error-message {

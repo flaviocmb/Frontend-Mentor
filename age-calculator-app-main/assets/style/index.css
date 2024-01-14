@@ -274,6 +274,11 @@
   .s-margin-right {
     margin-right: 0.9375rem; /* 15px */
   }
+  @media screen and (min-width: 768px) {
+    .s-margin-right {
+      margin-right: 2rem; /* 15px */
+    }
+  }
   .s-error-message {
     display: none;
     color: var(--light-red);
