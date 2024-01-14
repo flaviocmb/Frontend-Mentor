@@ -222,12 +222,6 @@
     color: var(--purple);
     letter-spacing: -0.3125rem;
   }
-  @media screen and (min-width: 768px) {
-    .m-countdown__span {
-      margin-right: -0.5rem;
-      letter-spacing: -0.0625rem;
-    }
-  }
 }
 @layer elements {
   .s-nowrap {

@@ -105,10 +105,3 @@
     color: var(--purple);
     letter-spacing: rem(-5);
 }
-
-@media screen and (min-width: 768px) {
-    .m-countdown__span {
-        margin-right: rem(-8);
-        letter-spacing: rem(-1);
-    }
-}
