@@ -10,7 +10,7 @@
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style type="text/css">
+  <style>
     .sr-only {
       position: absolute;
       width: 1px;
@@ -38,22 +38,22 @@
   <main class="l-main">
     <!-- outer container -->
     <div class="oc-container">
-      <form class="m-form" action="">
+      <form class="m-form" action="#">
         <fieldset class="s-display-flex">
           <legend class="sr-only">You have to put your day, month and year of birth date</legend>
           <div class="s-flex-direction__column s-margin-right">
             <label class="s-label-font" for="day">Day</label>
-            <input class="s-input-number s-input-margin-top" type="number" name="" id="day" placeholder="DD" min="0">
+            <input class="s-input-number s-input-margin-top" type="number" id="day" placeholder="DD" min="0">
             <div class="s-error-message s-day-error">This message will be showing instructions to correct typo</div>
           </div>
           <div class="s-flex-direction__column s-margin-right">
             <label for="month">Month</label>
-            <input class="s-input-number s-input-margin-top" type="number" name="" id="month" placeholder="MM" min="0">
+            <input class="s-input-number s-input-margin-top" type="number" id="month" placeholder="MM" min="0">
             <div class="s-error-message s-month-error">This message will be showing instructions to correct typo</div>
           </div>
           <div class="s-flex-direction__column">
             <label for="year">Year</label>
-            <input class="s-input-number s-input-margin-top" type="number" name="" id="year" placeholder="YYYY" min="0">
+            <input class="s-input-number s-input-margin-top" type="number" id="year" placeholder="YYYY" min="0">
             <div class="s-error-message s-year-error">This message will be showing instructions to correct typo</div>
           </div>
         </fieldset>
