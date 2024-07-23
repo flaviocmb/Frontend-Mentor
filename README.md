@@ -19,3 +19,5 @@ Projects completed:
 * [Blog Preview Card](https://flaviocmb.github.io/Frontend-Mentor/blog-preview-card-main/)
 
 * [Age Calculator App](https://flaviocmb.github.io/Frontend-Mentor/age-calculator-app-main/)
+
+* [Social Links Profile](https://flaviocmb.github.io/Frontend-Mentor/social-links-profile-main/)
