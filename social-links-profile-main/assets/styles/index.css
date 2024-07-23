@@ -160,12 +160,12 @@
   .m-social-button {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     background-color: var(--grey-700);
     color: var(--white);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s;
   }
   .m-social-button:hover {
