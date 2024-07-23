@@ -1,0 +1,16 @@
+$font-path: '../fonts/static/';
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('#{$font-path}Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('#{$font-path}Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('#{$font-path}Inter-SemiBold.ttf') format('truetype');
+}

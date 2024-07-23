@@ -1,6 +1,18 @@
 @charset "UTF-8";
 @layer basic, layout, module, state, theme;
 @layer settings {
+  @font-face {
+    font-family: "Inter-Regular";
+    src: url("../fonts/static/Inter-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Inter-Bold";
+    src: url("../fonts/static/Inter-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Inter-SemiBold";
+    src: url("../fonts/static/Inter-SemiBold.ttf") format("truetype");
+  }
   /* Box sizing rules */
   *,
   *::before,
@@ -122,16 +134,24 @@
     object-fit: cover;
   }
   .m-name {
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 1.5rem;
     margin-bottom: 9px;
   }
   .m-profile-location {
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 0.875rem;
     color: var(--green);
     margin-bottom: 27px;
   }
   .m-personalphrase {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 0.875rem;
     margin-bottom: 26px;
   }
   .m-social-links {
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 0.875rem;
     display: flex;
     flex-direction: column;
     align-items: center;
