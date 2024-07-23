@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./assets/styles/index.css">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+    .attribution { color: hsl(0, 0%, 100%); font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(75, 94%, 57%); }
+    .attribution a:hover { color: hsl(180, 48%, 52%); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="sr-only">This is a Social links profile card</h1>
+  </header>
+  <main class="l-main">
+    <h2 class="sr-only">Name, Location, Phrase and Links below</h2>
+    <section class="m-profile-card">
+      <header class="m-profile-info">
+        <figure class="m-avatar-container">
+          <picture>
+            <source srcset="./assets/images/avatar-jessica.webp" type="image/webp">
+            <source srcset="./assets/images/avatar-jessica.jpeg" type="image/jpeg">
+            <img src="./assets/images/avatar-jessica.webp" width="89" height="89" class="m-avatar" alt="The person is a black woman with curly black hair wearing a black shirt.">
+          </picture>
+          <figcaption class="sr-only">The person is a black woman with curly black hair wearing a black shirt.</figcaption>
+        </figure>
+        <h2 class="m-name">Jessica Randall</h2>
+        <p class="m-profile-location">London, United Kingdom</p>
+        <p class="m-personalphrase">"Front-end developer and avid reader."</p>
+      </header>
+      <nav class="m-social-links">
+        <h2 class="sr-only">Navigation buttons below</h2>
+        <a href="#" class="m-social-button">GitHub</a>
+        <a href="#" class="m-social-button">Frontend Mentor</a>
+        <a href="#" class="m-social-button">LinkedIn</a>
+        <a href="#" class="m-social-button">Twitter</a>
+        <a href="#" class="m-social-button">Instagram</a>
+      </nav>
+    </section>
+  </main>
+  <footer class="l-footer">
+    <h2 class="sr-only">Information by the provider and the developer</h2>
+    <div class="attribution">
+      <address>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Flávio César</a>.
+      </address>
+    </div>
+  </footer>
+</body>
+</html>

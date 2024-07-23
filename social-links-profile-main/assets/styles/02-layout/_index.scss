@@ -1,0 +1,10 @@
+.l-main {
+    flex: 1; /* This makes .l-main grow to occupy the remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-footer {
+    padding: 10px;
+}

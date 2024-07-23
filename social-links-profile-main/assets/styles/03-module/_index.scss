@@ -1,0 +1,75 @@
+// Pixels to rem
+@function rem($pixels) {
+    $base-font-size: 16; //baseline
+    @return calc(($pixels / $base-font-size) * 1rem);
+}
+
+.m-profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-profile-card {
+    margin: auto 24px;
+    padding: 24px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: rem(384);
+    // box-shadow: 0px 0px 1px rgb(0, 0, 0, 0.25);
+}
+
+// max-width 384 + margin 24 + 24 = 432px
+@media screen and (min-width: 432px) {
+    .m-profile-card {
+        padding: 40px;
+    }
+}
+
+.m-avatar-container {
+    margin-bottom: 27px;
+}
+
+.m-avatar {
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.m-name {
+    margin-bottom: 9px;
+}
+
+.m-profile-location {
+    color: var(--green);
+    margin-bottom: 27px;
+}
+
+.m-personalphrase {
+    margin-bottom: 26px;
+}
+
+.m-social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* Espaçamento entre os botões */
+}
+
+.m-social-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.m-social-button:hover {
+    color: var(--grey-900);
+    background-color: var(--green);
+}
