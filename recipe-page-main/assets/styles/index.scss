@@ -1,0 +1,24 @@
+//CSS arquitect
+
+@use 'sass:meta';
+@layer basic, layout, module, state, theme;
+
+@layer settings {
+  @include meta.load-css('01-basic');
+}
+
+@layer tools {
+  @include meta.load-css('02-layout');
+}
+
+@layer generics {
+  @include meta.load-css('03-module');
+}
+
+@layer elements {
+  @include meta.load-css('04-state');
+}
+
+@layer objects {
+  @include meta.load-css('05-theme');
+}

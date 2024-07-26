@@ -1,0 +1,183 @@
+@forward 'font';
+@forward 'reset';
+
+// Pixels to rem
+@function rem($pixels) {
+    $base-font-size: 16; //baseline
+    @return calc(($pixels / $base-font-size) * 1rem);
+}
+
+:root {
+
+--white: hsl(0, 0%, 100%);
+
+--stone-100: hsl(30, 54%, 90%);
+--stone-150: hsl(30, 18%, 87%);
+--stone-600: hsl(30, 10%, 34%);
+--stone-900: hsl(24, 5%, 18%);
+
+--brown-800: hsl(14, 45%, 36%);
+
+--rose-800: hsl(332, 51%, 32%);
+--rose-50: hsl(330, 100%, 98%);
+
+}
+
+body {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 736px) {
+    body {
+        position: relative;
+        max-width: 736px;
+        margin: 124px auto;
+        background: var(--stone-100);
+        z-index: 1;
+    }
+    
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: var(--white);
+        background-size: cover;
+        width: 100%;
+        border-radius: 24px;
+    }
+}
+
+h1, h2 {
+    font-family: 'Young-Serif', sans-serif;
+}
+
+h1 {
+    padding: 0 32px;
+    font-size: rem(36);
+    line-height: 100%;
+    white-space: normal !important; // overriding a _reset file configuration
+}
+
+@media screen and (min-width: 736px) {
+    h1 {
+        padding: 0;
+        font-size: rem(40);
+    }
+
+    img {
+        border-radius: 12px;
+    }
+}
+
+h2 {
+    color: var(--brown-800);
+    font-size: rem(28);
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-family: 'Outfit-SemiBold', sans-serif;
+    font-size: rem(20);
+    color: var(--rose-800);
+    margin-bottom: 16px;
+}
+
+//img max width 656 max height 300
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+p, ul, ol, table {
+    font-family: 'Outfit-Regular', sans-serif;
+    color: var(--stone-600);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; //<p> vs <li> different heights
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "•";
+    font-size: 1.325rem;
+    margin-left: 6px;
+    margin-right: 27px;
+    //aside ul = 24+6+7(size of bullet)+27 = 64
+    //section ul = 32+6+7(size of bullet)+27 = 72
+}
+
+section ol {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; //<p> and <li> have different heights
+}
+
+section ol li {
+    margin-left: 24px;
+    padding-left: 16px;
+    //section ol = 24+16+32 = 72
+}
+
+section ol li::marker {
+    font-family: 'Outfit-Bold', sans-serif;
+}
+
+/* changing the colors of the markers */
+aside ul li::before {
+    color: var(--rose-800);
+}
+
+section ul li::before, section ol li::marker {
+    color: var(--brown-800);
+}
+/* ==== */
+
+strong {
+    font-family: 'Outfit-Bold', sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+tr {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    width: 49%;
+    padding-left: 32px;
+    font-weight: normal;
+}
+
+td {
+    color: var(--brown-800);
+    font-family: 'Outfit-Bold', sans-serif;
+}

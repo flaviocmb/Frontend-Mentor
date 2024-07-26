@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@layer basic, layout, module, state, theme;
+@layer settings {
+  @font-face {
+    font-family: "Young-Serif";
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Outfit-Regular";
+    src: url("../fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Outfit-SemiBold";
+    src: url("../fonts/outfit/static/Outfit-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Outfit-Bold";
+    src: url("../fonts/outfit/static/Outfit-Bold.ttf") format("truetype");
+  }
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* Prevent font size inflation */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+  /* Remove default margin in favour of better control in authored CSS */
+  body, h1, h2, h3, h4, p,
+  figure, blockquote, dl, dd {
+    margin-block-end: 0;
+  }
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role=list],
+  ol[role=list] {
+    list-style: none;
+  }
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+  /* Set shorter line heights on headings and interactive elements */
+  h1, h2, h3, h4,
+  button, input, label {
+    line-height: 1.1;
+  }
+  /* Balance text wrapping on headings */
+  h1, h2,
+  h3, h4 {
+    text-wrap: balance;
+  }
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+  }
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  /* Inherit fonts for inputs and buttons */
+  input, button,
+  textarea, select {
+    font: inherit;
+  }
+  /* Make sure textareas without a rows attribute are not tiny */
+  textarea:not([rows]) {
+    min-height: 10em;
+  }
+  /* Anything that has been anchored to should have extra scroll margin */
+  :target {
+    scroll-margin-block: 5ex;
+  }
+  :root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+  }
+  body {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 736px) {
+    body {
+      position: relative;
+      max-width: 736px;
+      margin: 124px auto;
+      background: var(--stone-100);
+      z-index: 1;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: var(--white);
+      background-size: cover;
+      width: 100%;
+      border-radius: 24px;
+    }
+  }
+  h1, h2 {
+    font-family: "Young-Serif", sans-serif;
+  }
+  h1 {
+    padding: 0 32px;
+    font-size: 2.25rem;
+    line-height: 100%;
+    white-space: normal !important;
+  }
+  @media screen and (min-width: 736px) {
+    h1 {
+      padding: 0;
+      font-size: 2.5rem;
+    }
+    img {
+      border-radius: 12px;
+    }
+  }
+  h2 {
+    color: var(--brown-800);
+    font-size: 1.75rem;
+    line-height: 100%;
+    margin-bottom: 24px;
+  }
+  h3 {
+    font-family: "Outfit-SemiBold", sans-serif;
+    font-size: 1.25rem;
+    color: var(--rose-800);
+    margin-bottom: 16px;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+  p, ul, ol, table {
+    font-family: "Outfit-Regular", sans-serif;
+    color: var(--stone-600);
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+  }
+  ul li::before {
+    content: "•";
+    font-size: 1.325rem;
+    margin-left: 6px;
+    margin-right: 27px;
+  }
+  section ol {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  section ol li {
+    margin-left: 24px;
+    padding-left: 16px;
+  }
+  section ol li::marker {
+    font-family: "Outfit-Bold", sans-serif;
+  }
+  /* changing the colors of the markers */
+  aside ul li::before {
+    color: var(--rose-800);
+  }
+  section ul li::before, section ol li::marker {
+    color: var(--brown-800);
+  }
+  /* ==== */
+  strong {
+    font-family: "Outfit-Bold", sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+  tr {
+    border-bottom: 1px solid var(--stone-150);
+  }
+  tr:last-child {
+    border-bottom: none;
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  th {
+    width: 49%;
+    padding-left: 32px;
+    font-weight: normal;
+  }
+  td {
+    color: var(--brown-800);
+    font-family: "Outfit-Bold", sans-serif;
+  }
+}
+@layer tools {
+  .l-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .l-main {
+    flex: 1;
+    display: flex;
+    padding: 27px 32px;
+  }
+  @media screen and (min-width: 736px) {
+    .l-header {
+      padding: 40px 40px 0 40px;
+      gap: 42px;
+    }
+    .l-main {
+      padding: 27px 40px;
+    }
+  }
+  .l-footer {
+    padding: 10px;
+  }
+}
+@layer generics {
+  .m-prep-time {
+    background-color: var(--rose-50);
+    width: 100%;
+    padding: 24px;
+    border-radius: 12px;
+  }
+}
+@layer elements {
+  .s-bottom-line {
+    border-bottom: 1px solid var(--stone-150);
+    padding-bottom: 34px;
+  }
+}
+@layer objects {}
+
+/*# sourceMappingURL=index.css.map */

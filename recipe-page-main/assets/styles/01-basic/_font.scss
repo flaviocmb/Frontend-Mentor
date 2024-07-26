@@ -1,0 +1,22 @@
+$font-path-young: '../fonts/young-serif/';
+$font-path-outfit: '../fonts/outfit/static/';
+
+@font-face {
+    font-family: 'Young-Serif';
+    src: url('#{$font-path-young}YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url('#{$font-path-outfit}Outfit-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit-SemiBold';
+    src: url('#{$font-path-outfit}Outfit-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url('#{$font-path-outfit}Outfit-Bold.ttf') format('truetype');
+}
