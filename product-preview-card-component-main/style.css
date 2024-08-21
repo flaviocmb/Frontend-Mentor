@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* Box sizing rules */
+*, 
+*::before, 
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, p,
+figure {
+    margin-block-end: 0;
+}
+
+img, picture {
+    max-inline-size: 100%; /* max-width: 100%; */
+    block-size: auto;
+    display: block;
+}
+
+/* Inherit fonts for buttons */
+button {
+    font: inherit;
+}
+
+/* CSS Reset END ============ */
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --very-dark-cyan: hsl(158, 36%, 18%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: var(--white);
+    /* margin: 1.75rem auto; */
+    margin: 1.25rem auto;
+    width: 100%;
+    max-width: 21.4375rem; /* 343px */
+    border-radius: 10px;
+}
+
+.photo {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    margin-bottom: 16px;
+    color: var(--very-dark-blue);
+}
+
+.container {
+    margin: 1.5rem;
+}
+
+.row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.product-type {
+    font-size: 0.75rem; /* 12px */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.315rem; /* 5.04px */
+    margin-bottom: 12px;
+    color: var(--dark-grayish-blue);
+}
+
+.product-info {
+    font-size: 0.875rem; /* 14px */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 164.286%;
+    margin-bottom: 21px;
+    color: var(--dark-grayish-blue);
+}
+
+.product-price {
+    margin-bottom: 16px;
+    color: var(--dark-grayish-blue);
+}
+
+.sale-price {
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dark-cyan);
+}
+
+.original-price {
+    font-size: 0.875rem; /* 14px */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration-line: line-through;
+    letter-spacing: -0.02625rem;
+}
+
+.btn {
+    font-size: 0.875rem; /* 14px */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0;
+    background: var(--dark-cyan);
+    color: var(--white);
+    border-radius: 10px;
+    border: 0;
+}
+
+.btn:focus,
+.btn:hover {
+    background: var(--very-dark-cyan);
+}
+
+.btn__icon {
+    margin-right: 10px;
+}
+
+/* 699px */
+/* @media (max-width: 43.6875rem) {
+    .desktop-photo {
+        display: none;
+    }
+} */
+
+/* 700px */
+@media (min-width: 43.75rem) {
+    main {
+        width: 100%;
+        max-width: 37.5rem; /* 600px */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-bottom: 24px;
+    }
+
+    /* .mobile-photo {
+        display: none;
+    } */
+
+    /* .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0;
+    } */
+
+    /* .photo {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    } */
+
+    picture {
+        width: 50%; /* 50% space of the flex container */
+    }
+
+    .photo {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .container {
+        width: 50%; /* 50% space of the flex container */
+        padding: 32px;
+        margin: 0;
+    }
+
+    .product-type {
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        margin-bottom: 26px;
+    }
+    
+    .product-price {
+        margin-bottom: 26px;
+    }
+}
