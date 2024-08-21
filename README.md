@@ -23,3 +23,5 @@ Projects completed:
 * [Social Links Profile](https://flaviocmb.github.io/Frontend-Mentor/social-links-profile-main/)
 
 * [Recipe Page](https://flaviocmb.github.io/Frontend-Mentor/recipe-page-main/)
+
+* [Product Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/product-preview-card-component-main/)
