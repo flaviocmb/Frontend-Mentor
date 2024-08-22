@@ -38,20 +38,23 @@
         <source
           srcset="./images/image-product-desktop.jpg"
           media="(min-width: 43.75rem)"
+          type="image/jpg"
         />
         <img
           class="photo"
           src="./images/image-product-mobile.jpg"
           width="686"
           height="480"
+          type="image/jpg"
           alt="A gold-capped, clear glass bottle of Chanel Gabrielle perfume, resting on a white surface with green leaves."
+          aria-describedby="description"
         />
       </picture>
       <div class="container">
         <section class="product-card">
           <p class="product-type">Perfume</p>
           <h1>Gabrielle Essence Eau De Parfum</h1>
-          <p class="product-info">
+          <p class="product-info" id="description">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>

@@ -30,6 +30,7 @@ html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
+    line-height: 1.15;
 }
 
 /* Set core body defaults */
@@ -47,11 +48,6 @@ img, picture {
     max-inline-size: 100%; /* max-width: 100%; */
     block-size: auto;
     display: block;
-}
-
-/* Inherit fonts for buttons */
-button {
-    font: inherit;
 }
 
 /* CSS Reset END ============ */
@@ -82,11 +78,6 @@ main {
     border-radius: 10px;
 }
 
-.photo {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
 h1 {
     font-size: 2rem;
     font-family: "Fraunces", serif;
@@ -96,6 +87,11 @@ h1 {
     line-height: 100%;
     margin-bottom: 16px;
     color: var(--very-dark-blue);
+}
+
+.photo {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .container {
@@ -188,13 +184,6 @@ h1 {
     margin-right: 10px;
 }
 
-/* 699px */
-/* @media (max-width: 43.6875rem) {
-    .desktop-photo {
-        display: none;
-    }
-} */
-
 /* 700px */
 @media (min-width: 43.75rem) {
     main {
@@ -207,23 +196,6 @@ h1 {
     h1 {
         margin-bottom: 24px;
     }
-
-    /* .mobile-photo {
-        display: none;
-    } */
-
-    /* .container {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin: 0;
-    } */
-
-    /* .photo {
-        width: 100%;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    } */
 
     picture {
         width: 50%; /* 50% space of the flex container */
