@@ -34,24 +34,24 @@
   </head>
   <body>
     <main>
-      <picture>
-        <source
-          srcset="./images/image-product-desktop.jpg"
-          media="(min-width: 43.75rem)"
-          type="image/jpg"
-        />
-        <img
-          class="photo"
-          src="./images/image-product-mobile.jpg"
-          width="686"
-          height="480"
-          type="image/jpg"
-          alt="A gold-capped, clear glass bottle of Chanel Gabrielle perfume, resting on a white surface with green leaves."
-          aria-describedby="description"
-        />
-      </picture>
-      <div class="container">
-        <section class="product-card">
+      <section>
+        <picture>
+          <source
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 43.75rem)"
+            type="image/jpg"
+          />
+          <img
+            class="photo"
+            src="./images/image-product-mobile.jpg"
+            width="686"
+            height="480"
+            type="image/jpg"
+            alt="A gold-capped, clear glass bottle of Chanel Gabrielle perfume, resting on a white surface with green leaves."
+            aria-describedby="description"
+          />
+        </picture>
+        <div class="product-card container">
           <p class="product-type">Perfume</p>
           <h1>Gabrielle Essence Eau De Parfum</h1>
           <p class="product-info" id="description">
@@ -62,22 +62,25 @@
             <p><span class="sale-price">$149.99</span></p>
             <p><span class="original-price">$169.99</span></p>
           </div>
-          <button class="btn row-center">
+          <button class="btn row-center" aria-label="Add Gabrielle Essence Eau De Parfum to Cart">
             <img class="btn__icon" src="./images/icon-cart.svg" alt="icon" />
             Add to Cart
           </button>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-    <footer style="display: none">
+    <footer style="display: block">
       <div class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a  href="https://www.frontendmentor.io?ref=challenge" 
+            target="_blank" 
+            aria-label="Frontend Mentor Website"
           >Frontend Mentor</a
         >. Coded by
         <a
           href="https://www.frontendmentor.io/profile/flaviocmb"
           target="_blank"
+          aria-label="Flavio Cesar Frontend Mentor Profile"
           >Flavio Cesar</a
         >.
       </div>
