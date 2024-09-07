@@ -92,7 +92,7 @@ main {
 .hero-semistrong-title {
     font-family: "Poppins", system-ui;
     font-style: normal;
-    line-height: normal;
+    line-height: 1.5;
     font-size: clamp(1.5rem, 3.5vw, 2.3125rem); /* 24px and 37px*/
     text-align: center;
     letter-spacing: 0.48px;
