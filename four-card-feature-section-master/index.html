@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 10px;
+        color: hsl(229, 6%, 66%);
+      }
+      a[aria-label*="Website"] {
+        color: hsl(0, 78%, 62%);
+        text-decoration: none;
+      }
+      a[aria-label*="Flavio"] {
+        color: hsl(212, 86%, 64%);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="sr-only">Ensure Project Success with Our AI-Powered Platform</h1>
+    </header>
+    <main>
+      <section class="hero">
+        <p class="hero-thin-title">Reliable, efficient delivery</p>
+        <p class="hero-semistrong-title">Powered by Technology</p>
+        <p class="hero-text">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </section>
+      <section class="cards">
+        <div class="card card-supervisor">
+          <h2 class="card-title">
+            Supervisor
+          </h2>
+          <p class="card-text">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img src="./assets/images/icon-supervisor.svg" alt="A magnifying glass icon, representing the function of monitoring and identifying project obstacles.">
+        </div>
+        <div class="card card-team">
+          <h2 class="card-title">Team Builder</h2>
+          <p class="card-text">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img src="./assets/images/icon-team-builder.svg" alt="A house icon, representing the creation of optimized teams for each project.">
+        </div>
+        <div class="card card-karma">
+          <h2 class="card-title">Karma</h2>
+          <p class="card-text">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img src="./assets/images/icon-karma.svg" alt="A light bulb icon, representing the guarantee of quality and innovation in projects.">
+        </div>
+        <div class="card card-calculator">
+          <h2 class="card-title">Calculator</h2>
+          <p class="card-text">
+            Uses data from past projects to provide better delivery
+            estimates
+          </p>
+          <img src="./assets/images/icon-calculator.svg" alt="Graph icon, symbolizing data analysis to optimize projects.">
+        </div>
+      </section>
+    </main>
+    <footer style="display: none">
+      <p class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          aria-label="Frontend Mentor Website"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/flaviocmb"
+          target="_blank"
+          aria-label="Flavio Cesar Frontend Mentor Profile"
+          >Flavio</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
