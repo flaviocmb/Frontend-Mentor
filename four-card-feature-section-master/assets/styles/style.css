@@ -73,7 +73,7 @@ main {
     font-family: "Poppins", system-ui;
     font-style: normal;
     line-height: 1.5;
-    font-size: clamp(1.5rem, 0rem + 3.5vw, 2.3125rem); /* 24px and 37px*/
+    font-size: clamp(1.5rem, 0.5rem + 3.5vw, 2.3125rem); /* 24px and 37px*/
     text-align: center;
     letter-spacing: 0.48px;
     color: var(--very-dark-blue);
@@ -162,11 +162,6 @@ main {
 }
 
 /* responsivities */
-
-/* 720px */
-@media (min-width: 45rem) {
-    
-}
 
 /* 920px */
 @media (min-width: 57.5rem) {
