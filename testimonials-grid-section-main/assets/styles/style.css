@@ -72,9 +72,7 @@ main {
 }
 
 .testimonials {
-  /* 327px+10+10 1110px+10+10 */
-  /* max-width: clamp(21.6875rem, 50vw, 70.625rem); */
-  max-width: 21.6875rem;
+  max-width: 21.6875rem; /* 327px+10+10 */
   margin: 0 auto;
   display: grid;
   gap: 24px;
