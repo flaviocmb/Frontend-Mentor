@@ -94,7 +94,7 @@ main {
   column-gap: 15px;
   align-items: center;
   grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     "photo  name"
     "photo  status";
@@ -110,32 +110,21 @@ main {
 
 .testimonial__author {
   grid-area: name;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 500;
-  font-style: normal;
   font-size: 0.8125rem; /* 13px */
 }
 
 .testimonial__status {
   grid-area: status;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 500;
-  font-style: normal;
   font-size: 0.6875rem; /* 11px */
 }
 
 .testimonial__short {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
-  font-style: normal;
   font-size: 1.25rem; /* 20px */
   margin-block-end: 16px;
 }
 
 .testimonial__complete {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 500;
-  font-style: normal;
   font-size: 0.8125rem; /* 13px */
   line-height: 1.38;
 }
