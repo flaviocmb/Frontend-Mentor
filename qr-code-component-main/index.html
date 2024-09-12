@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./css/styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <title>Frontend Mentor | QR code component</title>
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 12px; position: fixed; bottom: 20px; left: 50%; transform: translate(-50%); white-space: nowrap;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main>
-    <div class="wrapper">
-      <div class="conteiner">
-        <div class="--conteiner__wrapper">
-          <img src="./images/image-qr-code.png" alt="QR Code from the challenge">
-        </div>
-        <div class="--conteiner__text">
-          <h1>Improve your front-end skills by building projects</h1>
-          <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-        </div>
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 10px;
+        color: hsl(229, 6%, 66%);
+      }
+      a[href*="frontendmentor"] {
+        color: hsl(218, 44%, 22%);
+        text-decoration: none;
+      }
+      .attribution a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <img
+          src="./images/image-qr-code.png"
+          width="288"
+          height="288"
+          alt="QR Code from the challenge"
+        />
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </article>
+    </main>
+    <footer style="display: block">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/flaviocmb"
+          target="_blank"
+          >Flávio César</a
+        >.
       </div>
-    </div>
-  </main>
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Flávio César</a>.
-    </div>
-  </footer>
-  <script src="./js/scripts.js" defer></script>
-</body>
+    </footer>
+  </body>
 </html>
