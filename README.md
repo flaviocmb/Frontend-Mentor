@@ -27,3 +27,5 @@ Projects completed:
 * [Product Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/product-preview-card-component-main/)
 
 * [Four Card Feature Section](https://flaviocmb.github.io/Frontend-Mentor/four-card-feature-section-master/)
+
+* [Testimonials Grid Section](https://flaviocmb.github.io/Frontend-Mentor/testimonials-grid-section-main/)
