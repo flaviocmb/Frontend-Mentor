@@ -82,6 +82,7 @@ section {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    margin-inline: 10px;
 }
 
 h1 {
@@ -117,6 +118,7 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     gap: 18px;
+    flex-wrap: wrap;
 }
 
 .product-type {

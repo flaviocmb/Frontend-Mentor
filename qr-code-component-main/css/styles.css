@@ -74,6 +74,7 @@ h1 {
 
 p {
   font-size: 0.9375rem; /* 15px */
+  letter-spacing: 0.15px;
   max-width: 15.4375rem; /* 247px */
   margin-block-end: 24px;
   color: var(--grayishblue);
