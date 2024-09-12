@@ -157,8 +157,7 @@ main {
   font-weight: 500;
   font-style: normal;
   font-size: 0.8125rem; /* 13px */
-  /* line-height: 1.4; */
-  line-height: 136.3%;
+  line-height: 1.38;
 }
 
 .quotebg {
@@ -166,56 +165,110 @@ main {
   background-image: url("../images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-size: 104px;
-  background-position: top right 24px;
+  background-position: top right clamp(24px, -18.1918px + 7.6712vw, 80px);
 }
 
 .padding-right-typo {
   padding-right: 15px;
 }
 
+.testimonials article:nth-of-type(3) {
+  box-shadow: 24px 16px 97px -18px var(--light-gray);
+}
+
+.testimonials article:nth-of-type(4) {
+  box-shadow: 24px 16px 97px -18px var(--light-gray);
+}
+
+.testimonials article:nth-of-type(5) {
+  box-shadow: 24px 16px 97px -18px var(--light-gray);
+}
+
 /* modifyers */
 
-.border-white-70 { border: 2px solid var(--white-70); }
+.border-white-70 {
+  border: 2px solid var(--white-70);
+}
 
-.border-dark-grayish { border: 2px solid var(--very-dark-grayish-blue); }
+.border-dark-grayish {
+  border: 2px solid var(--very-dark-grayish-blue);
+}
 
-.border-violet-70 { border: 2px solid var(--moderate-violet-70); }
+.border-violet-70 {
+  border: 2px solid var(--moderate-violet-70);
+}
 
-.border-light-gray-50 { border: 2px solid var(--light-gray-50); }
+.border-light-gray-50 {
+  border: 2px solid var(--light-gray-50);
+}
 
-.bg-violet { background-color: var(--moderate-violet); }
+.bg-violet {
+  background-color: var(--moderate-violet);
+}
 
-.bg-blackish { background: var(--very-dark-blackish-blue); }
+.bg-blackish {
+  background: var(--very-dark-blackish-blue);
+}
 
-.bg-white { background: var(--white); }
+.bg-white {
+  background: var(--white);
+}
 
-.bg-grayish { background: var(--very-dark-grayish-blue); }
+.bg-grayish {
+  background: var(--very-dark-grayish-blue);
+}
 
-.font-color-white { color: var(--white, white); }
+.font-color-white {
+  color: var(--white, white);
+}
 
-.font-color-white-50 { color: var(--white-50, white); }
+.font-color-white-50 {
+  color: var(--white-50, white);
+}
 
-.font-color-white-70 { color: var(--white-70, white); }
+.font-color-white-70 {
+  color: var(--white-70, white);
+}
 
-.font-color-light-gray { color: var(--light-gray); }
+.font-color-light-gray {
+  color: var(--light-gray);
+}
 
-.font-color-light-gray-50 { color: var(--light-gray-50); }
+.font-color-light-gray-50 {
+  color: var(--light-gray-50);
+}
 
-.font-color-light-gray-70 { color: var(--light-gray-70); }
+.font-color-light-gray-70 {
+  color: var(--light-gray-70);
+}
 
-.font-color-light-grayish { color: var(--light-grayish-blue, white); }
+.font-color-light-grayish {
+  color: var(--light-grayish-blue, white);
+}
 
-.font-color-light-grayish-50 { color: var(--light-grayish-blue-50, white); }
+.font-color-light-grayish-50 {
+  color: var(--light-grayish-blue-50, white);
+}
 
-.font-color-light-grayish-70 { color: var(--light-grayish-blue-70, white); }
+.font-color-light-grayish-70 {
+  color: var(--light-grayish-blue-70, white);
+}
 
-.font-color-dark-grayish { color: var(--very-dark-grayish-blue, black); }
+.font-color-dark-grayish {
+  color: var(--very-dark-grayish-blue, black);
+}
 
-.font-color-dark-grayish { color: var(--very-dark-grayish-blue, black); }
+.font-color-dark-grayish {
+  color: var(--very-dark-grayish-blue, black);
+}
 
-.font-color-dark-grayish-50 { color: var(--very-dark-grayish-blue-50, black); }
+.font-color-dark-grayish-50 {
+  color: var(--very-dark-grayish-blue-50, black);
+}
 
-.font-color-dark-grayish-70 { color: var(--very-dark-grayish-blue-70, black); }
+.font-color-dark-grayish-70 {
+  color: var(--very-dark-grayish-blue-70, black);
+}
 
 /* responsiveness */
 
@@ -241,6 +294,7 @@ main {
 
   .testimonials article:nth-of-type(3) {
     min-width: 255px;
+    box-shadow: 41px 46px 40px -40px var(--light-gray);
   }
 
   .testimonials article:nth-of-type(1) {
@@ -253,11 +307,12 @@ main {
 
   .testimonials article:nth-last-of-type(1) {
     grid-column: 1 / -1;
+    box-shadow: 41px 46px 40px -40px var(--light-gray);
   }
 }
 
-/* 1020 */
-@media (min-width: 63.75rem) {
+/* 1024px */
+@media (min-width: 64rem) {
   main {
     display: flex;
     align-items: center;
@@ -270,7 +325,7 @@ main {
     max-width: 69.375rem; /* 1110px */
     width: 90%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:
       "daniel     daniel    jonathan  kira"
       "jeanette   patrick   patrick   kira";
@@ -296,5 +351,10 @@ main {
 
   .testimonials article:nth-last-of-type(1) {
     grid-area: kira;
+  }
+
+  /* The design seem to have a wrong margin here */
+  .margin-block-end-typo {
+    margin-block-end: 20px;
   }
 }

@@ -28,21 +28,6 @@
         clip: rect(0, 0, 0, 0);
         border: 0;
       }
-      .skip-link {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background-color: #000;
-        color: #fff;
-        padding: 8px;
-        z-index: 100;
-        text-decoration: none;
-        transition: top 0.3s ease;
-      }
-
-      .skip-link:focus {
-        top: 0;
-      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -53,15 +38,9 @@
     </style>
   </head>
   <body>
-    <header>
-      <!-- Skip Links -->
-      <a href="#testimonials" class="skip-link">Skip to testimonials</a>
-      <a href="#footer" class="skip-link">Skip to footer</a>
-    </header>
     <main>
-      <h1 class="sr-only">Student testimonials about the bootcamp course</h1>
       <section class="testimonials" id="testimonials">
-        <h2 class="sr-only">Testimonials</h2>
+        <h1 class="sr-only">Student testimonials about the bootcamp course</h1>
         <article class="testimonial bg-violet quotebg">
           <header class="testimonial__profile">
             <img class="testimonial__profile-img border-light-gray-50" width="32" height="32" src="./assets/images/image-daniel.jpg" alt="" />
@@ -102,7 +81,7 @@
             <p class="testimonial__author font-color-dark-grayish">Jeanette Harmon</p>
             <p class="testimonial__status font-color-dark-grayish-50">Verified Graduate</p>
           </header>
-          <p class="testimonial__short font-color-dark-grayish">An overall wonderful and rewarding experience</p>
+          <p class="testimonial__short font-color-dark-grayish margin-block-end-typo">An overall wonderful and rewarding experience</p>
           <p class="testimonial__complete font-color-dark-grayish-70">
             “ Thank you for the wonderful experience! I now have a job I really
             enjoy, and make a good living while doing something I love. ”
@@ -114,7 +93,7 @@
             <p class="testimonial__author font-color-white">Patrick Abrams</p>
             <p class="testimonial__status font-color-white-50">Verified Graduate</p>
           </header>
-          <p class="testimonial__short font-color-white">
+          <p class="testimonial__short font-color-white margin-block-end-typo">
             Awesome teaching support from TAs who did the bootcamp themselves.
             Getting guidance from them and learning from their experiences was
             easy.
@@ -134,7 +113,7 @@
             <p class="testimonial__author font-color-dark-grayish">Kira Whittle</p>
             <p class="testimonial__status font-color-dark-grayish-50">Verified Graduate</p>
           </header>
-          <p class="testimonial__short font-color-dark-grayish">Such a life-changing experience. Highly recommended!</p>
+          <p class="testimonial__short font-color-dark-grayish margin-block-end-typo">Such a life-changing experience. Highly recommended!</p>
           <p class="testimonial__complete font-color-dark-grayish-70">
             “ Before joining the bootcamp, I’ve never written a line of code. I
             needed some structure from professionals who can help me learn
