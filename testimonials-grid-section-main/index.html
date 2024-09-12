@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -31,9 +38,15 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        padding: 10px;
+        color: hsla(217, 19%, 35%, 0.7);
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+      a[href*="frontendmentor"] {
+        color: hsl(219, 29%, 14%);
+        text-decoration: none;
+      }
+      .attribution a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -43,16 +56,28 @@
         <h1 class="sr-only">Student testimonials about the bootcamp course</h1>
         <article class="testimonial bg-violet quotebg">
           <header class="testimonial__profile">
-            <img class="testimonial__profile-img border-light-gray-50" width="32" height="32" src="./assets/images/image-daniel.jpg" alt="" />
-            <p class="testimonial__author font-color-light-gray">Daniel Clifford</p>
-            <p class="testimonial__status font-color-light-gray-50">Verified Graduate</p>
+            <img
+              class="testimonial__profile-img border-light-gray-50"
+              width="32"
+              height="32"
+              src="./assets/images/image-daniel.jpg"
+              alt=""
+            />
+            <p class="testimonial__author font-color-light-gray">
+              Daniel Clifford
+            </p>
+            <p class="testimonial__status font-color-light-gray-50">
+              Verified Graduate
+            </p>
           </header>
           <h2 class="testimonial__short font-color-light-grayish">
             I received a job offer mid-course, and the subjects I learned were
             current, if not more so, in the company I joined. I honestly feel I
             got every penny’s worth.
           </h2>
-          <p class="testimonial__complete font-color-light-gray-70 padding-right-typo">
+          <p
+            class="testimonial__complete font-color-light-gray-70 padding-right-typo"
+          >
             “ I was an EMT for many years before I joined the bootcamp. I’ve
             been looking to make a transition and have heard some people who had
             an amazing experience here. I signed up for the free intro course
@@ -64,11 +89,23 @@
         </article>
         <article class="testimonial bg-grayish">
           <header class="testimonial__profile">
-            <img class="testimonial__profile-img border-dark-grayish" width="32" height="32" src="./assets/images/image-jonathan.jpg" alt="" />
-            <p class="testimonial__author font-color-light-grayish">Jonathan Walters</p>
-            <p class="testimonial__status font-color-light-grayish-50">Verified Graduate</p>
+            <img
+              class="testimonial__profile-img border-dark-grayish"
+              width="32"
+              height="32"
+              src="./assets/images/image-jonathan.jpg"
+              alt=""
+            />
+            <p class="testimonial__author font-color-light-grayish">
+              Jonathan Walters
+            </p>
+            <p class="testimonial__status font-color-light-grayish-50">
+              Verified Graduate
+            </p>
           </header>
-          <h2 class="testimonial__short font-color-light-grayish">The team was very supportive and kept me motivated</h2>
+          <h2 class="testimonial__short font-color-light-grayish">
+            The team was very supportive and kept me motivated
+          </h2>
           <p class="testimonial__complete font-color-light-grayish-70">
             “ I started as a total newbie with virtually no coding skills. I now
             work as a mobile engineer for a big company. This was one of the
@@ -77,11 +114,25 @@
         </article>
         <article class="testimonial bg-white">
           <header class="testimonial__profile">
-            <img class="testimonial__profile-img font-color-white-70" width="32" height="32" src="./assets/images/image-jeanette.jpg" alt="" />
-            <p class="testimonial__author font-color-dark-grayish">Jeanette Harmon</p>
-            <p class="testimonial__status font-color-dark-grayish-50">Verified Graduate</p>
+            <img
+              class="testimonial__profile-img font-color-white-70"
+              width="32"
+              height="32"
+              src="./assets/images/image-jeanette.jpg"
+              alt=""
+            />
+            <p class="testimonial__author font-color-dark-grayish">
+              Jeanette Harmon
+            </p>
+            <p class="testimonial__status font-color-dark-grayish-50">
+              Verified Graduate
+            </p>
           </header>
-          <h2 class="testimonial__short font-color-dark-grayish margin-block-end-typo">An overall wonderful and rewarding experience</h2>
+          <h2
+            class="testimonial__short font-color-dark-grayish margin-block-end-typo"
+          >
+            An overall wonderful and rewarding experience
+          </h2>
           <p class="testimonial__complete font-color-dark-grayish-70">
             “ Thank you for the wonderful experience! I now have a job I really
             enjoy, and make a good living while doing something I love. ”
@@ -89,9 +140,17 @@
         </article>
         <article class="testimonial bg-blackish">
           <header class="testimonial__profile">
-            <img class="testimonial__profile-img border-violet-70" width="32" height="32" src="./assets/images/image-patrick.jpg" alt="" />
+            <img
+              class="testimonial__profile-img border-violet-70"
+              width="32"
+              height="32"
+              src="./assets/images/image-patrick.jpg"
+              alt=""
+            />
             <p class="testimonial__author font-color-white">Patrick Abrams</p>
-            <p class="testimonial__status font-color-white-50">Verified Graduate</p>
+            <p class="testimonial__status font-color-white-50">
+              Verified Graduate
+            </p>
           </header>
           <h2 class="testimonial__short font-color-white margin-block-end-typo">
             Awesome teaching support from TAs who did the bootcamp themselves.
@@ -109,11 +168,25 @@
         </article>
         <article class="testimonial bg-white">
           <header class="testimonial__profile">
-            <img class="testimonial__profile-img font-color-white-70" width="32" height="32" src="./assets/images/image-kira.jpg" alt="" />
-            <p class="testimonial__author font-color-dark-grayish">Kira Whittle</p>
-            <p class="testimonial__status font-color-dark-grayish-50">Verified Graduate</p>
+            <img
+              class="testimonial__profile-img font-color-white-70"
+              width="32"
+              height="32"
+              src="./assets/images/image-kira.jpg"
+              alt=""
+            />
+            <p class="testimonial__author font-color-dark-grayish">
+              Kira Whittle
+            </p>
+            <p class="testimonial__status font-color-dark-grayish-50">
+              Verified Graduate
+            </p>
           </header>
-          <h2 class="testimonial__short font-color-dark-grayish margin-block-end-typo">Such a life-changing experience. Highly recommended!</h2>
+          <h2
+            class="testimonial__short font-color-dark-grayish margin-block-end-typo"
+          >
+            Such a life-changing experience. Highly recommended!
+          </h2>
           <p class="testimonial__complete font-color-dark-grayish-70">
             “ Before joining the bootcamp, I’ve never written a line of code. I
             needed some structure from professionals who can help me learn
@@ -132,12 +205,17 @@
       </section>
     </main>
 
-    <footer style="display: none" id="footer">
+    <footer style="display: block" id="footer">
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://www.frontendmentor.io/profile/flaviocmb" target="_blank">Flavio Cesar</a>.
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/flaviocmb"
+          target="_blank"
+          >Flavio Cesar</a
+        >.
       </div>
     </footer>
   </body>
