@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: hsl(0, 0%, 42%);
+      }
+      .attribution a {
+        color: hsl(0, 0%, 7%);
+        text-decoration: none;
+      }
+      .attribution a:hover {
+        text-decoration: underline;
+      }
+      a[href*="flavio"],
+      a[href*="frontendmentor"] {
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-landmark">
+      <h1 class="sr-only">This is a blog card</h1>
+      <article class="blog-card">
+        <header class="header-as-non-landmark">
+          <img src="./assets/images/illustration-article.svg" width="336" height="200" alt="" />
+          <p class="blog-card-status">Learning</p>
+          <p class="blog-card-date">Published 21 Dec 2023</p>
+        </header>
+        <main>
+          <h2><a class="blog-card-title-link" href="#">HTML & CSS foundations</a></h2>
+          <p class="blog-card-text">
+            These languages are the backbone of every website, defining structure,
+            content, and presentation.
+          </p>
+        </main>
+        <footer class="blog-card-author">
+          <img src="./assets/images/image-avatar.webp" width="32" height="32" alt="" >
+          <p class="author-name">Greg Hooper</p>
+        </footer>
+      </article>
+    </main>
+
+    <footer style="display: none;">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/flaviocmb" target="_blank"
+          >Flavio Cesar</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
