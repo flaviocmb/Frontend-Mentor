@@ -1,31 +1,40 @@
+.m-attribution {
+    color: var(--grey);
+}
+
 .m-attribution a {
-    color: hsl(141, 45%, 44%);
+    color: var(--black);
+    font-family: 'Figtree-SemiBold', sans-serif;
+}
+
+.m-attribution a:hover {
+    text-decoration: underline;
 }
 
 .m-oc {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     border: 1px solid var(--black);
     background-color: var(--white);
-    max-width: 20.4375rem; /* width: 327px, height: 501px (both including border) */
+    max-width: 20.4375rem; /* width 327px height 501px (both including border) */
     width: 100%;
     border-radius: 18px;
     padding: 23px;
     box-shadow: 8px 8px 0px 0px #000;
+    margin-inline: 10px;
 }
 
 @media screen and (min-width: 768px) {
     .m-oc {
-        max-width: 24rem; /* width: 384px, height: 521px (both including border) */
+        max-width: 24rem; /* width 384px height 521px (both including border) */
     }
 }
 
 .m-oc__banner img {
     object-fit: cover;
     border-radius: 10px;
-    width: 100%; /* width: 279px */
-    height: 12.5rem; /* height: 200px */
+    width: 100%; /* width 279px */
+    height: 12.5rem; /* height 200px */
 }
 
 @media screen and (min-width: 768px) {
@@ -90,14 +99,13 @@
     color: var(--grey);
     margin-bottom: 22px;
     line-height: 1.25rem;
-    font-family: 'Figtree-Regular';
+    font-family: 'Figtree-Regular', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
     .m-oc__text {
         font-size: 1rem;
         line-height: 1.5rem;
-        font-family: 'Figtree-Regular';
     }
 }
 
