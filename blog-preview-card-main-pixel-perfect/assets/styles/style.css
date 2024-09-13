@@ -117,6 +117,7 @@ h2 {
   font-size: clamp(0.875rem, 0.68rem + 0.6667vw, 1rem); /* 14px 16px */
   line-height: 148.6%;
   margin-block-end: 24px;
+  color: var(--gray-500);
 }
 
 .blog-card-author {
