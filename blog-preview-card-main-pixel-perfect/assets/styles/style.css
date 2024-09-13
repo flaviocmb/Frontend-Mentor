@@ -52,6 +52,12 @@ body {
   font-weight: 500;
   font-style: normal;
   display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -70,12 +76,6 @@ h2 {
 
 .blog-card-title-link:hover {
   color: var(--yellow);
-}
-
-.main-landmark {
-  flex: 1;
-  display: flex;
-  justify-content: center;
 }
 
 /* measures 325 to 382 and 499 to 520 plus borders 1px each side */
