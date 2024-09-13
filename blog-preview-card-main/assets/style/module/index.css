@@ -5,6 +5,7 @@
 .m-attribution a {
   color: var(--black);
   font-family: "Figtree-SemiBold", sans-serif;
+  text-decoration: none;
 }
 
 .m-attribution a:hover {
@@ -26,28 +27,9 @@
 
 @media screen and (min-width: 768px) {
   .m-oc {
-    /* position: relative; */
     max-width: 24rem; /* width 384px height 521px (both including border) */
     transition: box-shadow 0.3s ease;
   }
-
-  /* .m-oc__link {
-    text-decoration: none;
-    text-transform: none;
-    display: block;
-  } */
-
-  /* .m-oc::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-  } */
-
-  /* .m-oc__link::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-  } */
 
   .m-oc:hover {
     box-shadow: 16px 16px 0px 0px #000;
