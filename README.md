@@ -16,7 +16,7 @@ Projects completed:
 
 * [Newsletter Sign Up with Success Message](https://flaviocmb.github.io/Frontend-Mentor/newsletter-sign-up-with-success-message-main/)
 
-* [Blog Preview Card](https://flaviocmb.github.io/Frontend-Mentor/blog-preview-card-main/)
+* [Blog Preview Card](https://flaviocmb.github.io/Frontend-Mentor/blog-preview-card-main-pixel-perfect/)
 
 * [Age Calculator App](https://flaviocmb.github.io/Frontend-Mentor/age-calculator-app-main/)
 
