@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Meet Landing Page - GitHub](https://github.com/flaviocmb/Frontend-Mentor/tree/main/meet-landing-page)
-- Live Site URL: [Meet Landing Page - Live Site]()
+- Live Site URL: [Meet Landing Page - Live Site](https://flaviocmb.github.io/Frontend-Mentor/meet-landing-page)
 
 ## My process
 
