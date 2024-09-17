@@ -172,6 +172,7 @@ header {
 
 .hero__btn-blue {
   background: var(--cyan-600);
+  transition: background .3s ease;
 }
 
 .hero__btn-blue:hover {
@@ -186,6 +187,7 @@ header {
 .hero__btn-purple {
   background: var(--purple-600);
   padding: 16px 40px;
+  transition: background .3s ease;
 }
 
 .hero__btn-purple:hover {
@@ -298,6 +300,7 @@ header {
 
 .footer-cta__btn {
   background: var(--purple-600);
+  transition: background .3s ease;
 }
 
 .footer-cta__btn:hover {
