@@ -29,3 +29,5 @@ Projects completed:
 * [Four Card Feature Section](https://flaviocmb.github.io/Frontend-Mentor/four-card-feature-section-master/)
 
 * [Testimonials Grid Section](https://flaviocmb.github.io/Frontend-Mentor/testimonials-grid-section-main/)
+
+* [Meet Landing Page](https://flaviocmb.github.io/Frontend-Mentor/meet-landing-page/)
