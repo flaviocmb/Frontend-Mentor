@@ -488,5 +488,6 @@ header {
 
   .footer-cta__btn {
     justify-self: end;
+    align-self: start;
   }
 }
