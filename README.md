@@ -33,3 +33,5 @@ Projects completed:
 * [Meet Landing Page](https://flaviocmb.github.io/Frontend-Mentor/meet-landing-page/)
 
 * [NTF Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/nft-preview-card-component-main/)
+
+* [NTF Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/order-summary-component-main/)
