@@ -102,6 +102,7 @@ h1 {
   max-width: clamp(20.4375rem, 7.929rem + 26.0593vw, 28.125rem);
   border-radius: 20px;
   margin-inline: 10px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
 }
 
 .card__image {
