@@ -31,3 +31,5 @@ Projects completed:
 * [Testimonials Grid Section](https://flaviocmb.github.io/Frontend-Mentor/testimonials-grid-section-main/)
 
 * [Meet Landing Page](https://flaviocmb.github.io/Frontend-Mentor/meet-landing-page/)
+
+* [NTF Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/nft-preview-card-component-main/)
