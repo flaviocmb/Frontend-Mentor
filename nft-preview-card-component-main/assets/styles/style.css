@@ -148,6 +148,11 @@ h2 {
   color: var(--soft-blue);
 }
 
+.card__author-img {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
 .card__author-name {
   color: var(--white);
 }
