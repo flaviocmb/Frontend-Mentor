@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <img class="card__image" src="./assets/images/illustration-hero.svg" alt="" width="450" height="220" />
+        <div class="card__main-container">
+          <h1>Order Summary</h1>
+          <p class="card__main-text">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="card__subscription-wrapper">
+            <img class="card__subscription-img" src="./assets/images/icon-music.svg" alt="" width="48" height="48">
+            <p class="card__subscription-title">Annual Plan</p>
+            <p class="card__subscription-price">
+              <span class="sr-only">Current price:</span>
+              $59.99/year
+            </p>
+            <a class="card__subscription-change" href="#">Change</a>
+          </div>
+          <button class="btn__payment">Proceed to Payment</button>
+          <button class="btn__cancel">Cancel Order</button>
+        </div>
+      </article>
+    </main>
+
+    <footer style="display: none;">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/flaviocmb"
+          >Flavio Cesar</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+/* .red-hat-display-<uniquifier> {
+    font-family: "Red Hat Display", system-ui;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+:root {
+  /* ### font settings */
+
+  --fluid-14-16-rem: clamp(0.875rem, 0.6716rem + 0.4237vw, 1rem);
+  --fluid-13-14-rem: clamp(0.8125rem, 0.7108rem + 0.2119vw, 0.875rem);
+
+  /* ### selection colors   */
+
+  --cor-selection-bg: #000;
+  --cor-selection-text: #fff;
+
+  /* ### Primary */
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ### Neutral */
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /* ### Hover */
+  --hover-color: hsl(245, 83%, 68%);
+}
+
+/* Reset CSS ================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background-color: var(--cor-selection-bg);
+  color: var(--cor-selection-text);
+  text-shadow: none;
+}
+
+/* Reset CSS END ================ */
+
+body {
+  min-height: 100vh;
+  font-family: "Red Hat Display", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--pale-blue);
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: clamp(1.375rem, 0.7648rem + 1.2712vw, 1.75rem);
+  font-weight: 900;
+  line-height: normal;
+  margin-block-end: 16px;
+  color: var(--dark-blue);
+}
+
+.card {
+  background: var(--white);
+  max-width: clamp(20.4375rem, 7.929rem + 26.0593vw, 28.125rem);
+  border-radius: 20px;
+  margin-inline: 10px;
+}
+
+.card__image {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card__main-container {
+  margin-inline: clamp(24px, -15.0508px + 5.0847vw, 48px);
+  margin-block: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card__main-text {
+  max-width: 16.4375rem;
+  font-size: clamp(0.9375rem, 0.8358rem + 0.2119vw, 1rem);
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--desaturated-blue);
+  margin-block-end: clamp(20px, 30.5085px + -0.8475vw, 24px);
+}
+
+.card__subscription-wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "img    plan    change"
+    "img    price   change";
+  padding: clamp(
+    16px,
+    2.9831px + 1.6949vw,
+    24px
+  ); /* 17px minus 1px from h1 title */
+  background-color: var(--very-pale-blue);
+  border-radius: 11px;
+  width: 100%;
+  margin-block-end: clamp(24px, 10.9831px + 1.6949vw, 32px);
+}
+
+.card__subscription-img {
+  grid-area: img;
+  align-self: center;
+}
+
+.card__subscription-title {
+  grid-area: plan;
+  font-size: var(--fluid-14-16-rem);
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.card__subscription-price {
+  grid-area: price;
+  font-size: var(--fluid-14-16-rem);
+  color: var(--desaturated-blue);
+}
+
+.card__subscription-title,
+.card__subscription-price {
+  justify-self: start;
+  margin-inline-start: 6px;
+}
+
+.card__subscription-change {
+  grid-area: change;
+  color: var(--bright-blue);
+  font-size: var(--fluid-13-14-rem);
+  font-weight: 700;
+  justify-self: end;
+}
+
+.btn__payment {
+  width: 100%;
+  padding-block: 16px; /* plus 1px coz of line-height adjustments */
+  border: 0;
+  background-color: var(--bright-blue);
+  color: var(--white);
+  border-radius: 11px;
+  font-weight: 900;
+  font-size: 0.9375rem;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+  margin-block-end: clamp(24px, 10.9831px + 1.6949vw, 32px);
+  padding-inline: 10px;
+}
+
+.btn__cancel {
+  background-color: transparent;
+  border: 0;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  color: var(--desaturated-blue);
+}
+
+/* 768px */
+@media (min-width: 48rem) {
+  body {
+    background: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--pale-blue);
+    width: 100%;
+  }
+
+  h1 {
+    margin-block-end: 17px;
+  }
+
+  .card__main-container {
+    margin-block: 45px 48px;
+  }
+
+  .card__main-text {
+    max-width: none;
+    width: 100%;
+    line-height: 26px;
+  }
+
+  .card__subscription-wrapper {
+    grid-template-columns: 1fr 2.5fr 1fr;
+  }
+
+  .card__subscription-title,
+  .card__subscription-price {
+    margin-inline-start: 0;
+  }
+
+  .card__subscription-change:hover {
+    color: var(--hover-color);
+    text-decoration: none;
+  }
+
+  .btn__payment,
+  .btn__cancel {
+    cursor: pointer;
+  }
+
+  .btn__payment:hover {
+    background-color: var(--hover-color);
+  }
+
+  .btn__cancel:hover {
+    color: var(--dark-blue);
+  }
+}
