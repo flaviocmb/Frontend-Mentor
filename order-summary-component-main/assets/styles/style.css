@@ -121,7 +121,7 @@ h1 {
 .card__main-text {
   max-width: clamp(16.4375rem, 7.1833rem + 19.2797vw, 22.125rem);
   font-size: clamp(0.9375rem, 0.8358rem + 0.2119vw, 1rem);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 25px;
   color: var(--desaturated-blue);
   margin-block-end: clamp(20px, 30.5085px + -0.8475vw, 24px);
