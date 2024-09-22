@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 10px;
+        color: hsl(215, 51%, 70%);
+      }
+      .attribution a {
+        color: hsl(0, 0%, 100%);
+      }
+      .attribution a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">This is a NFT preview card</h1>
+      <article class="card">
+        <header>
+          <a href="#" class="card__image-wrapper">
+            <img
+              class="card__image"
+              src="./assets/images/image-equilibrium.jpg"
+              width="302"
+              height="302"
+              alt=""
+            />
+          </a>
+          <h2><a href="#">Equilibrium #3429</a></h2>
+        </header>
+        <div>
+          <p class="card__main-text">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="card__count-info-content">
+            <div class="card__eth-content">
+              <img src="./assets/images/icon-ethereum.svg" alt="" />
+              <p class="card__eth-unit">0.041 ETH</p>
+            </div>
+            <div class="card__days-content">
+              <img src="assets/images/icon-clock.svg" alt="" />
+              <p class="card__days-left">3 days left</p>
+            </div>
+          </div>
+        </div>
+        <footer class="card__author-content">
+          <img
+            src="./assets/images/image-avatar.png"
+            width="33"
+            height="33"
+            alt="Author avatar"
+          />
+          <p class="card__author">
+            Creation of <a href="#" class="card__author-name">Jules Wyvern</a>
+          </p>
+        </footer>
+      </article>
+    </main>
+    <footer style="display: none">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/flaviocmb"
+          target="_blank"
+          >Flavio Cesar</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
