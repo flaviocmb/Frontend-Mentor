@@ -216,6 +216,7 @@ h1 {
     }
 
     .component__photo {
+        width: 540px;
         height: 100%;
         object-fit: cover;
         object-position: center;
