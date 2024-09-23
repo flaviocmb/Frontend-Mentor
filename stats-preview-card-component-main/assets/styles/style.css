@@ -1,20 +1,8 @@
-/* .lexend-deca-<uniquifier> {
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  } */
-
-/* .inter-<uniquifier> {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  } */
-
 :root {
-  --cor-selection-bg: #fff;
-  --cor-selection-text: #000;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-selection-bg: var(--color-white);
+  --color-selection-text: var(--color-black);
 
   /* ### personalized */
   --color-filter-photo-bg: hsl(277, 100%, 27.1%);
@@ -32,6 +20,18 @@
   --white-main-heading-stats: hsl(0, 0%, 100%);
   --slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
   --slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+  /* ### Font Families */
+  --font-lexend: "Lexend Deca", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* ### Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* ### Font Properties */
+  --font-optical-sizing: auto;
+  --font-style-normal: normal;
 }
 
 /* Reset CSS ================ */
@@ -48,14 +48,15 @@ html {
   text-size-adjust: none;
 }
 
-picture, img {
+picture,
+img {
   max-inline-size: 100%;
   block-size: auto;
   display: block;
 }
 
 em {
-    font-style: normal;
+  font-style: var(--font-style-normal);
 }
 
 ::selection {
@@ -67,169 +68,166 @@ em {
 /* Reset CSS END ================ */
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    background-color: var(--very-dark-blue-main-bg);
-    color: var(--white-main-heading-stats);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-inter);
+  font-optical-sizing: var(--font-optical-sizing);
+  font-weight: var(--font-weight-normal);
+  font-style: var(--font-style-normal);
+  background-color: var(--very-dark-blue-main-bg);
+  color: var(--white-main-heading-stats);
 }
 
 main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 1.75rem;
-    line-height: 115%;
-    margin-block-end: 15px; /* 16 minus one */
+  font-weight: var(--font-weight-bold);
+  font-size: 1.75rem;
+  line-height: 115%;
+  margin-block-end: 15px; /* 16 minus one */
 }
 
 .component {
-    text-align: center;
-    max-width: 20.4375rem;
-    background-color: var(--dark-desaturated-blue-card-bg);
-    margin-inline: 10px;
-    margin-block: 10px;
-    border-radius: 8px;
+  text-align: center;
+  max-width: 20.4375rem;
+  background-color: var(--dark-desaturated-blue-card-bg);
+  margin-inline: 10px;
+  margin-block: 10px;
+  border-radius: var(--border-radius);
 }
 
 .component__photo-content {
-    position: relative;
+  position: relative;
 }
 
 .component__photo-content::after {
-    content: '';
-    position: absolute;
-    background-color: var(--color-filter-photo-bg);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.6;
+  content: "";
+  position: absolute;
+  background-color: var(--color-filter-photo-bg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
 }
 
 .component__photo-content::after,
 .component__photo {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
 .component-container {
-    padding-inline: 36px;
-    padding-block: 39px 36px; /* 40 and 37 minus one */
+  padding: 39px 36px 36px; /* 40 and 37 minus one */
 }
 
 .component__title--accent {
-    color: var(--soft-violet-accent);
+  color: var(--soft-violet-accent);
 }
 
 .component__main-text {
-    font-size: 0.9375rem;
-    line-height: 165%;
-    color: var(--slightly-transparent-white-main-paragraph);
-    margin-block-end: 40px;
+  font-size: 0.9375rem;
+  line-height: 165%;
+  color: var(--slightly-transparent-white-main-paragraph);
+  margin-block-end: 40px;
 }
 
 .component__stats-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: normal;
-    gap: 28px; /* 29 minus one */
-    font-weight: 700;
-    font-size: 1.5rem;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: normal;
+  gap: 28px; /* 29 minus one */
+  font-weight: var(--font-weight-bold);
+  font-size: 1.5rem;
+  list-style: none;
 }
 
 .component__stats-list li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
 }
 
 .component__stat:nth-last-of-type(1) {
-    margin-block-end: 0;
+  margin-block-end: 0;
 }
 
 .component__stat-element {
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 0.8125rem;
-    color: var(--slightly-transparent-white-stat-headings);
-    letter-spacing: 0.26px;
-    text-transform: uppercase;
+  font-family: var(--font-lexend);
+  font-optical-sizing: var(--font-optical-sizing);
+  font-weight: var(--font-weight-normal);
+  font-style: var(--font-style-normal);
+  font-size: 0.8125rem;
+  color: var(--slightly-transparent-white-stat-headings);
+  letter-spacing: 0.26px;
+  text-transform: uppercase;
 }
 
 /* 768px */
 @media (min-width: 48rem) {
+  h1 {
+    font-size: clamp(24px, -24px + 4.6875vw, 36px);
+    font-size: clamp(1.75rem, 1rem + 1.5625vw, 2.25rem);
+    line-height: normal;
+    letter-spacing: 1.04px;
+    margin-block-end: 25px;
+  }
 
-    h1 {
-        font-size: clamp(24px, -24px + 4.6875vw, 36px);
-        font-size: clamp(1.75rem, 1rem + 1.5625vw, 2.25rem);
-        line-height: normal;
-        letter-spacing: 1.04px;
-        margin-block-end: 25px;
-    }
+  h1,
+  .component__main-text {
+    max-width: var(--max-width-text-content);
+  }
 
-    h1,
-    .component__main-text {
-        max-width: var(--max-width-text-content);
-    }
+  .component {
+    max-width: 69.25rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    margin-inline: 30px;
+  }
 
-    .component {
-        max-width: 69.25rem;
-        display: grid;
-        grid-template-columns: 1fr auto;
-        grid-template-rows: auto;
-        margin-inline: 30px;
-    }
+  .component-container {
+    order: 1;
+    text-align: left;
+    padding-inline: 70px clamp(30px, -330px + 35.1563vw, 120px); /* 1024 to 1280 */
+    padding-block: 70px 64px;
+  }
 
-    .component-container {
-        order: 1;
-        text-align: left;
-        padding-inline: 70px clamp(30px, -330px + 35.1563vw, 120px); /* 1024 to 1280 */
-        padding-block: 70px 64px;
-    }
+  .component__photo-content {
+    order: 2;
+  }
 
-    .component__photo-content {
-        order: 2;
-    }
+  .component__photo-content::after,
+  .component__photo {
+    border-radius: 0;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+  }
 
-    .component__photo-content::after,
-    .component__photo {
-        border-radius: 0;
-        border-top-right-radius: var(--border-radius);
-        border-bottom-right-radius: var(--border-radius);
-    }
+  .component__photo {
+    width: 540px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 
-    .component__photo {
-        width: 540px;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+  .component__main-text {
+    margin-block-end: clamp(40px, -8px + 6.25vw, 72px);
+  }
 
-    .component__main-text {
-        /* letter-spacing: 0.045px; */
-        margin-block-end: clamp(40px, -8px + 6.25vw, 72px);
-    }
-
-    .component__stats-list {
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 63px;
-    }
+  .component__stats-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 63px;
+  }
 }
