@@ -180,7 +180,7 @@ h1 {
         font-size: clamp(24px, -24px + 4.6875vw, 36px);
         font-size: clamp(1.75rem, 1rem + 1.5625vw, 2.25rem);
         line-height: normal;
-        letter-spacing: 1.08px;
+        letter-spacing: 1.04px;
         margin-block-end: 25px;
     }
 
