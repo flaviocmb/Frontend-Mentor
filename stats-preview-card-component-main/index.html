@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+        padding: 10px;
+        color: hsla(0, 0%, 100%, 0.6);
+      }
+      .attribution a {
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+      }
+      .attribution a:hover, .attribution a:focus {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="component">
+        <picture class="component__photo-content">
+          <source
+            srcset="./assets/images/image-header-desktop.jpg"
+            media="(min-width: 48rem)"
+            width="540"
+            height="446"
+            type="image/jpg"
+            alt=""
+          />
+          <img
+            class="component__photo"
+            src="./assets//images/image-header-mobile.jpg"
+            width="654"
+            height="480"
+            type="image/jpg"
+            alt=""
+          />
+        </picture>
+        <div class="component-container">
+          <h1>
+            Get <em class="component__title--accent">insights</em> that help
+            your business grow.
+          </h1>
+          <p class="component__main-text">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <ul class="component__stats-list">
+            <li>10k+ <span class="component__stat-element">companies</span></li>
+            <li>314 <span class="component__stat-element">templates</span></li>
+            <li>12m+ <span class="component__stat-element">queries</span></li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <footer style="display: none">
+      <div class="attribution">
+        Challenge by
+        <a 
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="opens new tab"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/flaviocmb"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="opens new tab"
+          >Flavio Cesar</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
