@@ -35,3 +35,5 @@ Projects completed:
 * [NFT Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/nft-preview-card-component-main/)
 
 * [Order Summary Component](https://flaviocmb.github.io/Frontend-Mentor/order-summary-component-main/)
+
+* [Stats Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/stats-preview-card-component-main/)
