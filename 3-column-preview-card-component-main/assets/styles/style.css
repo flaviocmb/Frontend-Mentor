@@ -1,0 +1,193 @@
+:root {
+  --border-radius-cards: 8px;
+
+  /* ### Font Families */
+  --font-callback: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-legend: "Lexend Deca", var(--font-callback);
+  --font-big-shoulders: "Big Shoulders Display", var(--font-callback);
+
+  /* ### Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* ### Font Properties */
+  --font-optical-sizing: auto;
+  --font-style-normal: normal;
+
+  /* ### Font sizes */
+  --font-size-h2: 2.5rem;
+  --font-size-text: 0.9375rem;
+
+  /* ### Primary colors */
+  --color-white: #fff;
+  --color-black: #000;
+
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral colors */
+  --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray-bg-hd-btn: hsl(0, 0%, 95%);
+
+  /* ### ::selection */
+  --color-selection-bg: var(--color-black);
+  --color-selection-text: var(--color-white);
+}
+
+/* Reset CSS ================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+::selection {
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
+  text-shadow: none;
+}
+
+/* Reset CSS END ================ */
+
+body,
+button {
+  background-color: var(--very-light-gray-bg-hd-btn);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-legend);
+  font-optical-sizing: var(--font-optical-sizing);
+  font-weight: var(--font-weight-normal);
+  font-style: var(--font-style-normal);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: var(--font-big-shoulders);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  color: var(--very-light-gray-bg-hd-btn);
+}
+
+p {
+  font-size: var(--font-size-text);
+  color: var(--transparent-white-paragraphs);
+  line-height: 165%;
+  margin-block: 25px;
+}
+
+button {
+  font: inherit;
+  font-size: var(--font-size-text);
+  border: 2px solid var(--very-light-gray-bg-hd-btn);
+  padding: 12px 30px 13px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.card-sedan button {
+  color: var(--bright-orange);
+}
+
+.card-suv button {
+  color: var(--dark-cyan);
+}
+
+.card-luxury button {
+  color: var(--very-dark-cyan);
+}
+
+img {
+  margin-block-end: 35px;
+}
+
+.cards {
+  margin-block: 87px;
+  margin-inline: 10px;
+}
+
+.card {
+  max-width: 20.4375rem;
+  padding: 48px;
+}
+
+.card-sedan {
+  background-color: var(--bright-orange);
+  border-top-left-radius: var(--border-radius-cards);
+  border-top-right-radius: var(--border-radius-cards);
+}
+
+.card-suv {
+  background-color: var(--dark-cyan);
+}
+
+.card-luxury {
+  background-color: var(--very-dark-cyan);
+  border-bottom-left-radius: var(--border-radius-cards);
+  border-bottom-right-radius: var(--border-radius-cards);
+}
+
+/* 768px */
+@media (min-width: 48rem) {
+  button:hover,
+  button:focus {
+    color: var(--very-light-gray-bg-hd-btn);
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray-bg-hd-btn);
+  }
+
+  p {
+    margin-block: 25px 83px;
+  }
+
+  .cards {
+    max-width: 57.5rem;
+    display: flex;
+    margin-inline: 20px;
+  }
+
+  .card {
+    flex: 1;
+    display: grid;
+    align-items: flex-start;
+  }
+
+  button {
+    align-self: flex-end;
+    justify-self: flex-start;
+  }
+
+  .card-sedan {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--border-radius-cards);
+  }
+
+  .card-luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: var(--border-radius-cards);
+  }
+}
