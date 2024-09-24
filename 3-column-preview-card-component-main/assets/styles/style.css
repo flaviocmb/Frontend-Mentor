@@ -169,6 +169,7 @@ img {
     max-width: 57.5rem;
     display: flex;
     margin-inline: 20px;
+    margin-block: 0;
   }
 
   .card {
