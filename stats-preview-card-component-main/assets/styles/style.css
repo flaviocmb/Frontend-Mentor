@@ -60,8 +60,8 @@ em {
 }
 
 ::selection {
-  background-color: var(--cor-selection-bg);
-  color: var(--cor-selection-text);
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
   text-shadow: none;
 }
 
