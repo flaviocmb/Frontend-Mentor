@@ -81,8 +81,7 @@ body {
 
 main {
   flex: 1;
-  margin-block-start: 171px;
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
