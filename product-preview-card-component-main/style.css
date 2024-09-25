@@ -90,7 +90,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     line-height: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     color: var(--very-dark-blue);
 }
 
@@ -115,7 +115,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 18px;
+    gap: 1.125rem;
     flex-wrap: wrap;
 }
 
@@ -128,7 +128,7 @@ h1 {
     text-transform: uppercase;
     line-height: normal;
     letter-spacing: 0.315rem; /* 5.04px */
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
     color: var(--dark-grayish-blue);
 }
 
@@ -139,12 +139,12 @@ h1 {
     font-weight: 500;
     font-style: normal;
     line-height: 164.286%;
-    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
     color: var(--dark-grayish-blue);
 }
 
 .product-price {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     color: var(--dark-grayish-blue);
 }
 
@@ -175,7 +175,7 @@ h1 {
     font-style: normal;
     cursor: pointer;
     width: 100%;
-    padding: 15px 0 16px;
+    padding: 0.9375rem 0 1rem;
     background: var(--dark-cyan);
     color: var(--white);
     border-radius: 10px;
@@ -188,7 +188,7 @@ h1 {
 }
 
 .btn__icon {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 /* 700px */
@@ -204,7 +204,7 @@ h1 {
     }
 
     h1 {
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
 
     picture {
@@ -220,18 +220,18 @@ h1 {
 
     .product-card {
         width: 50%; /* 50% space of the flex container */
-        padding: 32px;
+        padding: 2rem;
     }
 
     .product-type {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .product-info {
-        margin-bottom: 26px;
+        margin-bottom: 1.625rem;
     }
     
     .product-price {
-        margin-bottom: 26px;
+        margin-bottom: 1.625rem;
     }
 }
