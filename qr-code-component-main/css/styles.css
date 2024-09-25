@@ -46,6 +46,7 @@ main {
 }
 
 article {
+  max-width: 20rem;
   background-color: var(--white);
   padding: 16px;
   border-radius: 20px;
@@ -59,6 +60,7 @@ article {
 
 img {
   border-radius: 10px;
+  width: 100%;
 }
 
 h1 {
