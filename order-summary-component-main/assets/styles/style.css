@@ -108,6 +108,7 @@ h1 {
 .card__image {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  width: 100%;
 }
 
 .card__main-container {
