@@ -87,6 +87,7 @@ main {
   border-radius: 10px;
   margin-inline: 10px;
   line-height: normal;
+  transition: transform .3s ease-out;
 }
 
 .testimonial__profile {
@@ -146,7 +147,7 @@ main {
 }
 
 .testimonials article:nth-of-type(4) {
-  box-shadow: 24px 16px 97px -18px var(--light-gray);
+  box-shadow: 24px 16px 60px -40px var(--light-gray);
 }
 
 .testimonials article:nth-of-type(5) {
@@ -251,6 +252,10 @@ main {
 
   .testimonial {
     margin-inline: 0;
+  }
+
+  .testimonial:hover {
+    transform: translateY(-5px);
   }
 
   .testimonials article:nth-of-type(2) {
