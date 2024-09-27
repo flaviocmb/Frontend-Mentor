@@ -1,7 +1,7 @@
 :root {
   /* ### content properties */
   /* img 96x96 */
-  --card-max-width-mobile: 20.375rem;
+  --card-max-width: clamp(20.375rem, 15.875rem + 9.375vw, 21.875rem);
   --card-max-width-desktop: 21.875rem;
   --font-h2-age-stat-title: 1.125rem;
   --font-city: 0.875rem;
@@ -60,6 +60,11 @@ html {
   text-size-adjust: none;
 }
 
+html, body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 img {
   max-inline-size: 100%;
   block-size: auto;
@@ -79,7 +84,6 @@ ul {
 /* Reset CSS END ================ */
 
 body {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,19 +99,26 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
-  position: relative;
-  overflow: hidden;
 }
 
-main::before, main::after {
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.main__container::before, .main__container::after {
   --circle-shape-mobile: 37.5625rem; /* 601px */
   width: var(--circle-shape-mobile);
   height: var(--circle-shape-mobile);
 }
 
 /* top circle */
-main::before {
+.main__container::before {
   position: absolute;
   content: '';
   bottom: 60.96%; /* 406.65px */
@@ -120,7 +131,7 @@ main::before {
 }
 
 /* bottom circle */
-main::after {
+.main__container::after {
   position: absolute;
   content: '';
   top: 53.97%; /* 360px */
@@ -133,7 +144,7 @@ main::after {
 }
 
 .card {
-  max-width: var(--card-max-width-mobile);
+  max-width: var(--card-max-width);
   background-color: var(--color-white);
   margin: var(--margin-card);
   border-radius: var(--borde-radius-card-mobile);
@@ -248,24 +259,20 @@ main::after {
 /* 768px */
 @media (min-width: 48rem) {
 
-  main::before, main::after {
+  .main__container::before, .main__container::after {
     --circle-shape: 61.125rem; /* 978px */
     width: var(--circle-shape);
     height: var(--circle-shape);
   }
   
-  main::before {
+  .main__container::before {
     bottom: 35.11%; /* 252.86px */
     right: 51.83%; /* 746.45px */
   }
 
-  main::after {
+  .main__container::after {
     top: 52.29%; /* 376.55px */
     left: 48.09%; /* 692.55px */
-  }
-
-  .card {
-    max-width: var(--card-max-width-desktop);
   }
 
   .card__stats-list {
