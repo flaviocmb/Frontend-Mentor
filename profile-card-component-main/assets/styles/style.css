@@ -196,7 +196,7 @@ main::after {
 
 .card__profile-age {
   font-size: var(--font-h2-age-stat-title);
-  color: var(--dark-gray);
+  color: var(--dark-grayish-blue);
 }
 
 .card__profile-location {
