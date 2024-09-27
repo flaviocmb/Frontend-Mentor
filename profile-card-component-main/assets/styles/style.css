@@ -1,0 +1,280 @@
+:root {
+  /* ### content properties */
+  /* img 96x96 */
+  --card-max-width-mobile: 20.375rem;
+  --card-max-width-desktop: 21.875rem;
+  --font-h2-age-stat-title: 1.125rem;
+  --font-city: 0.875rem;
+  --font-stat-label: 0.625rem;
+  --letter-space-stat-title: 0.039375rem; /* 0.63px */
+  --letter-space-stat-label: 0.09375rem; /* 1.5px */
+  --borde-radius-card-desktop: 0.9375rem;
+  --borde-radius-card-mobile: 0.875rem;
+  --margin-card: 0.625rem;
+  --card__name-age-block-gap: 0.5rem;
+  --stats-list-grid-gap-mobile: 0.875rem;
+  --stats-list-grid-gap-desktop: 2.28125rem;
+
+  /* ### Font Families */
+  --font-callback: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --font-kumbh-sans: "Kumbh Sans", var(--font-callback);
+
+  /* ### Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* ### Font Properties */
+  --font-optical-sizing: auto;
+  --font-style-normal: normal;
+
+  /* ### Primary */
+  --color-white: #fff;
+  --color-black: #000;
+
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* ### Neutral */
+  --dark-gray: hsl(0, 0%, 59%);
+
+  /* ### ::selection */
+  --color-selection-bg: var(--color-black);
+  --color-selection-text: var(--color-white);
+}
+
+/* Reset CSS ================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+::selection {
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
+  text-shadow: none;
+}
+
+/* Reset CSS END ================ */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-kumbh-sans);
+  font-optical-sizing: var(--font-optical-sizing);
+  font-weight: var(--font-weight-normal);
+  font-style: var(--font-style-normal);
+  background-color: var(--dark-cyan);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+main::before, main::after {
+  --circle-shape-mobile: 37.5625rem; /* 601px */
+  width: var(--circle-shape-mobile);
+  height: var(--circle-shape-mobile);
+}
+
+/* top circle */
+main::before {
+  position: absolute;
+  content: '';
+  bottom: 60.96%; /* 406.65px */
+  right: 43.71%; /* 163.93px */
+  background: url(../images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* bottom circle */
+main::after {
+  position: absolute;
+  content: '';
+  top: 53.97%; /* 360px */
+  left: 44.26%; /* 166px */
+  background: url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  z-index: -1;
+}
+
+.card {
+  max-width: var(--card-max-width-mobile);
+  background-color: var(--color-white);
+  margin: var(--margin-card);
+  border-radius: var(--borde-radius-card-mobile);
+  width: 100%;
+}
+
+.card__header,
+.card__stats-list {
+  padding-inline: 5px;
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  padding-block-end: 1.5625rem;
+}
+
+.card__header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: -1;
+  border-top-left-radius: var(--borde-radius-card-mobile);
+  border-top-right-radius: var(--borde-radius-card-mobile);
+}
+
+.card__header img {
+  border-radius: 50%;
+  border: 5px solid var(--color-white);
+  margin-block: 5.4375rem 1.1875rem;
+}
+
+.card__name-age-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--card__name-age-block-gap);
+  margin-block-end: 0.5rem;
+}
+
+.card__profile-name,
+.card__stats-list li {
+  color: var(--very-dark-desaturated-blue);
+}
+
+.card__profile-name {
+  font-size: var(--font-h2-age-stat-title);
+  font-weight: var(--font-weight-bold);
+}
+
+.card__profile-age {
+  font-size: var(--font-h2-age-stat-title);
+  color: var(--dark-gray);
+}
+
+.card__profile-location {
+  font-size: var(--font-city);
+  color: var(--dark-gray);
+}
+
+.ghost-line {
+  position: relative;
+  height: 0px;
+  background-color: var(--dark-gray);
+}
+
+.ghost-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--dark-gray);
+  opacity: 0.5;
+}
+
+.card__stats-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 77px);
+  gap: var(--stats-list-grid-gap-mobile);
+  padding-block: 1.5rem;
+}
+
+.card__stats-list li {
+  text-align: center;
+  font-size: var(--font-h2-age-stat-title);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-space-stat-title);
+}
+
+.card__stat-element {
+  display: block;
+  font-size: var(--font-stat-label);
+  font-weight: var(--font-weight-normal);
+  color: var(--dark-gray);
+  letter-spacing: var(--letter-space-stat-label);
+  margin-block-start: 0.25rem;
+}
+
+/* 768px */
+@media (min-width: 48rem) {
+
+  main::before, main::after {
+    --circle-shape: 61.125rem; /* 978px */
+    width: var(--circle-shape);
+    height: var(--circle-shape);
+  }
+  
+  main::before {
+    bottom: 35.11%; /* 252.86px */
+    right: 51.83%; /* 746.45px */
+  }
+
+  main::after {
+    top: 52.29%; /* 376.55px */
+    left: 48.09%; /* 692.55px */
+  }
+
+  .card {
+    max-width: var(--card-max-width-desktop);
+  }
+
+  .card__stats-list {
+    gap: var(--stats-list-grid-gap-desktop);
+  }
+
+  .card__stats-list li:nth-of-type(1) {
+    justify-self: end;
+  }
+
+  .card__stats-list li:nth-of-type(3) {
+    justify-self: start;
+  }
+}

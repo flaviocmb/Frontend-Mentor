@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./assets/styles/style.css">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+    .attribution { font-size: 0.6875rem; text-align: center; padding: 0.625rem; color: hsl(229, 23%, 23%); }
+    .attribution a { text-decoration: none;  color: inherit; font-weight: 700; }
+    .attribution a:hover, .attribution a:focus { text-decoration: underline; color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="sr-only">Blog Card Profile</h1>
+    <article class="card">
+      <header class="card__header">
+        <img 
+          src="./assets/images/image-victor.jpg"
+          width="106"
+          height="106"
+          alt="Young man with medium brown skin, 
+              short dark hair, wearing a jacket with 
+              a light-colored shearling collar, standing 
+              outdoors with a blurred background and soft 
+              evening light.">
+        <div class="card__name-age-block">
+          <h2 class="card__profile-name">Victor Crest</h2>
+          <p class="card__profile-age">26</p>
+        </div>
+        <p class="card__profile-location">London</p>
+      </header>
+      <div class="ghost-line"></div>
+      <ul class="card__stats-list">
+        <li>
+          80K
+          <span class="card__stat-element">Followers<span>
+        </li>
+        <li>
+          803K
+          <span class="card__stat-element">Likes</span>
+        </li>
+        <li>
+          1.4K
+          <span class="card__stat-element">Photos</span>
+        </li>
+      </ul>
+    </article>
+  </main>
+  <footer style="display: none;">
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer" title="Opens new tab">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/flaviocmb" target="_blank" rel="noopener noreferrer" title="Opens new tab">Flavio Cesar</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
