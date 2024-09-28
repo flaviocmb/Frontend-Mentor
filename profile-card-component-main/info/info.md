@@ -40,3 +40,11 @@ I don’t have the Figma file for this project, but I think the shapes are:
 - Mobile: 601px square
 
 Now you just gotta do your math to position them right like in the design! 🔎
+
+```css
+
+.card__stats-list li:nth(2) {
+  margin-right: 48.24px;
+  margin-left: 42.24px;
+}
+```
