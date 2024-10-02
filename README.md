@@ -39,3 +39,5 @@ Projects completed:
 * [Stats Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/stats-preview-card-component-main/)
 
 * [3 Column Preview Card Component](https://flaviocmb.github.io/Frontend-Mentor/3-column-preview-card-component-main/)
+
+* [Chat App CSS Illustration](https://flaviocmb.github.io/Frontend-Mentor/chat-app-css-illustration-master/)
