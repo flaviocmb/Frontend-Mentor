@@ -475,15 +475,11 @@ article p {
 
 /* 768px */
 @media (min-width: 48rem) {
+  /* to-do: why did I have to repeat no-repeat? */
   body::before,
   body::after {
-    position: absolute;
-    content: "";
-    width: 31.875rem; /* 510px */
-    height: 63.625rem; /* 1018px */
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
   }
 
   body::before {
