@@ -1,5 +1,6 @@
 :root {
   /* ### content properties */
+  --animation-state: running; /* running or paused */
   --phone-card--max-width: 15.4375rem; /* 247px */
   --article-main-text-max-width-desk-mobile: clamp(19.4375rem, -14.0625rem + 52.3438vw, 27.8125rem); /* 311px 445px */
   --card-border-radius: 1.875rem; /* 40px */
@@ -322,11 +323,12 @@ article p {
 
 /* ### animations */
 
-/* .chat--baloon-left,
+.chat--baloon-left,
 .chat--baloon-right {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.5s forwards;
+  animation-play-state: var(--animation-state);
 }
 
 @keyframes fadeIn {
@@ -349,6 +351,7 @@ article p {
   transform: scale(0.8);
   animation: fadeInScale 0.5s forwards;
   animation-delay: 1s;
+  animation-play-state: var(--animation-state);
 }
 
 @keyframes fadeInScale {
@@ -394,6 +397,16 @@ article p {
 
 .phone__chat-text-seven { 
   animation-delay: 5s;
+}
+
+/* Managing the animation */
+/* .chat--baloon-left,
+.chat--baloon-right,
+.phone__chat-photos-container,
+.phone__chat-photos-container img {
+  animation: none;
+  opacity: 1;
+  transform: none;
 } */
 
 /* ### END animations */
