@@ -58,11 +58,11 @@
 
 html {
   text-size-adjust: none;
+  overflow-x: hidden;
 }
 
 html, body {
   min-height: 100vh;
-  overflow: hidden;
 }
 
 img {
@@ -92,6 +92,7 @@ body {
   font-weight: var(--font-weight-normal);
   font-style: var(--font-style-normal);
   background-color: var(--dark-cyan);
+  overflow: hidden;
 }
 
 main {
@@ -154,7 +155,7 @@ main {
 
 .card__header,
 .card__stats-list {
-  padding-inline: 5px;
+  padding-inline: 0.3125rem;
 }
 
 .card__header {
@@ -169,13 +170,14 @@ main {
 
 .card__header::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   width: 100%;
   height: 100%;
   background: url(../images/bg-pattern-card.svg);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: contain;
   z-index: -1;
   border-top-left-radius: var(--borde-radius-card-mobile);
   border-top-right-radius: var(--borde-radius-card-mobile);
@@ -183,7 +185,7 @@ main {
 
 .card__header img {
   border-radius: 50%;
-  border: 5px solid var(--color-white);
+  border: 0.3125rem solid var(--color-white);
   margin-block: 5.4375rem 1.1875rem;
 }
 
@@ -226,7 +228,7 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
+  height: 0.0625rem;
   background-color: var(--dark-gray);
   opacity: 0.5;
 }
@@ -234,7 +236,7 @@ main {
 .card__stats-list {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 77px);
+  grid-template-columns: repeat(auto-fit, 4.8125rem);
   gap: var(--stats-list-grid-gap-mobile);
   padding-block: 1.5rem;
 }
