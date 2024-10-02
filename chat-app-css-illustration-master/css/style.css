@@ -2,7 +2,11 @@
   /* ### content properties */
   --animation-state: running; /* running or paused */
   --phone-card--max-width: 15.4375rem; /* 247px */
-  --article-main-text-max-width-desk-mobile: clamp(19.4375rem, -14.0625rem + 52.3438vw, 27.8125rem); /* 311px 445px */
+  --article-main-text-max-width-desk-mobile: clamp(
+    19.4375rem,
+    -14.0625rem + 52.3438vw,
+    27.8125rem
+  ); /* 311px 445px */
   --card-border-radius: 1.875rem; /* 40px */
   --card-inner-border-radius: 1.25rem; /* 20px */
   --card-inner-border-color: rgba(62, 39, 83, 0.05);
@@ -127,7 +131,7 @@ body {
 body::before,
 body::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 31.875rem; /* 510px */
   height: 63.625rem; /* 1018px */
   background-repeat: no-repeat;
@@ -338,12 +342,12 @@ article p {
   }
 }
 
-.phone__chat-text-one { 
-  animation-delay: 0s; 
+.phone__chat-text-one {
+  animation-delay: 0s;
 }
 
-.phone__chat-text-two { 
-  animation-delay: 0.5s; 
+.phone__chat-text-two {
+  animation-delay: 0.5s;
 }
 
 .phone__chat-photos-container {
@@ -367,35 +371,35 @@ article p {
   animation: fadeInScale 0.5s forwards;
 }
 
-.phone__chat-photos-container img:nth-child(1) { 
-  animation-delay: 1.5s; 
+.phone__chat-photos-container img:nth-child(1) {
+  animation-delay: 1.5s;
 }
 
-.phone__chat-photos-container img:nth-child(2) { 
-  animation-delay: 2s; 
+.phone__chat-photos-container img:nth-child(2) {
+  animation-delay: 2s;
 }
 
-.phone__chat-photos-container img:nth-child(3) { 
-  animation-delay: 2.5s; 
+.phone__chat-photos-container img:nth-child(3) {
+  animation-delay: 2.5s;
 }
 
-.phone__chat-text-three { 
-  animation-delay: 3s; 
+.phone__chat-text-three {
+  animation-delay: 3s;
 }
 
-.phone__chat-text-four { 
-  animation-delay: 3.5s; 
+.phone__chat-text-four {
+  animation-delay: 3.5s;
 }
 
-.phone__chat-text-five { 
-  animation-delay: 4s; 
+.phone__chat-text-five {
+  animation-delay: 4s;
 }
 
-.phone__chat-text-six { 
-  animation-delay: 4.5s; 
+.phone__chat-text-six {
+  animation-delay: 4.5s;
 }
 
-.phone__chat-text-seven { 
+.phone__chat-text-seven {
   animation-delay: 5s;
 }
 
@@ -450,7 +454,7 @@ article p {
 
 .phone__message-field::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0.3025rem;
   right: 0.295625rem;
   width: 1.5625rem; /* 25px */
@@ -471,16 +475,19 @@ article p {
 
 /* 768px */
 @media (min-width: 48rem) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 1.5625rem;
-    padding: 0;
+  body::before,
+  body::after {
+    position: absolute;
+    content: "";
+    width: 31.875rem; /* 510px */
+    height: 63.625rem; /* 1018px */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
   }
 
   body::before {
-    bottom: 12.50%;
+    bottom: 12.5%;
     right: 70.83%;
   }
 
@@ -489,8 +496,17 @@ article p {
     left: 77.29%;
   }
 
-  article, .phone {
-    margin: 0
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1.5625rem;
+    padding: 0;
+  }
+
+  article,
+  .phone {
+    margin: 0;
   }
 
   .phone {
