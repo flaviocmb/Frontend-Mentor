@@ -400,14 +400,14 @@ article p {
 }
 
 /* Managing the animation */
-/* .chat--baloon-left,
+.chat--baloon-left,
 .chat--baloon-right,
 .phone__chat-photos-container,
 .phone__chat-photos-container img {
   animation: none;
   opacity: 1;
   transform: none;
-} */
+}
 
 /* ### END animations */
 
