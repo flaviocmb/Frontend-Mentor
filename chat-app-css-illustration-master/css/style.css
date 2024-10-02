@@ -1,0 +1,498 @@
+/* .rubik-<uniquifier> {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+
+:root {
+  /* ### content properties */
+  --phone-card--max-width: 15.4375rem; /* 247px */
+  --article-main-text-max-width-desk-mobile: clamp(19.4375rem, -14.0625rem + 52.3438vw, 27.8125rem); /* 311px 445px */
+  --card-border-radius: 1.875rem; /* 40px */
+  --card-inner-border-radius: 1.25rem; /* 20px */
+  --card-inner-border-color: rgba(62, 39, 83, 0.05);
+  --card-padding: 0.625rem 0.53125rem; /* 10px 8.5px */
+
+  --ear-speaker-border-radius: 0.875rem; /* 14px */
+  --bg-nav-bar-profile: linear-gradient(225deg, #e844ff 0%, #8739ff 100%);
+  --bg-chat-text-payment-180: linear-gradient(45deg, #e844ff 0%, #8739ff 100%);
+  --bg-text-left-chat-violet: hsl(276, 41%, 93%);
+  --message-field-border-radius: 1.059375rem;
+
+  /* ### Font Sizes */
+  --font-size-8px: 0.5rem;
+  --h1-font-size: 2.5rem; /* 40px */
+  --article-paragraph-font-size: 1rem;
+  --profile-name-font-size: 0.6875rem;
+  --profile-status-font-size: var(--font-size-8px);
+  --text-chat-font-size: var(--font-size-8px);
+  --price-job-font-size: 0.75rem;
+  --place-holder-font-size: 0.5625rem; /* 9px */
+
+  /* ## Font Line Height */
+  --text-chat-line-height: 0.6875rem;
+  --text-article-paragraph-line-height: 1.75rem;
+
+  /* ### Font Families */
+  --font-callback: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --font-rubik: "Rubik", var(--font-callback);
+
+  /* ### Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* ### Font Properties */
+  --font-optical-sizing: auto;
+  --font-style-normal: normal;
+
+  /* ## Colors */
+
+  /* ### Primary */
+
+  /* #### Text */
+
+  --pale-violet-sub-heading-at-the-top-of-the-app-UI: hsl(276, 100%, 81%);
+  --moderate-violet-chat-on-the-left: hsl(276, 55%, 52%);
+  --desaturated-dark-violet-chat-on-the-right: hsl(271, 15%, 43%);
+  --grayish-blue-placeholder-text: hsl(206, 6%, 79%);
+  --very-dark-desaturatedviolet-main-heading: hsl(271, 36%, 24%);
+  --dark-grayish-violet-paragraph: hsl(270, 7%, 64%);
+
+  /* #### Gradients */
+
+  /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+  --light-magenta: hsl(293, 100%, 63%);
+  --light-violet: hsl(264, 100%, 61%);
+
+  /* ### Secondary */
+
+  --white: hsl(0, 0%, 100%);
+  --white-main-background: hsl(0, 0%, 98%);
+  --black: hsl(0, 0%, 0%);
+  --light-grayish-violet-app-background: hsl(270, 20%, 96%);
+  --very-dark-desaturated-violet-submit-button-background: hsl(271, 36%, 24%);
+  --very-light-magenta-radio-button-outline: hsl(289, 100%, 72%);
+
+  /* ### ::selection */
+  --color-selection-bg: var(--black);
+  --color-selection-text: var(--white);
+}
+
+/* Reset CSS ================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  text-size-adjust: none;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+::selection {
+  background-color: var(--color-selection-bg);
+  color: var(--color-selection-text);
+  text-shadow: none;
+}
+
+/* Reset CSS END ================ */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-rubik);
+  font-optical-sizing: var(--font-optical-sizing);
+  font-weight: var(--font-weight-normal);
+  font-style: var(--font-style-normal);
+  background-color: var(--white-main-background);
+  overflow: hidden;
+  position: relative;
+}
+
+/* main backgrounds */
+body::before,
+body::after {
+  position: absolute;
+  content: '';
+  width: 31.875rem; /* 510px */
+  height: 63.625rem; /* 1018px */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+body::before {
+  background: url(../images/background-violet-top.svg);
+  background-position: bottom center;
+  right: 49.86%;
+  bottom: 45.61%;
+}
+
+body::after {
+  background: url(../images/background-violet-desaturated-bottom.svg);
+  background-position: top center;
+  left: 50.13%;
+  top: 45.61%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 4rem;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-medium);
+  color: var(--very-dark-desaturatedviolet-main-heading);
+  margin-block-end: 1.5rem;
+}
+
+article {
+  text-align: center;
+  max-width: var(--article-main-text-max-width-desk-mobile);
+  margin-inline: 0.625rem;
+  margin-block-end: 1.5rem;
+}
+
+article p {
+  font-size: var(--article-paragraph-font-size);
+  color: var(--dark-grayish-violet-paragraph);
+  line-height: var(--text-article-paragraph-line-height);
+}
+
+/* Phone card */
+.phone {
+  position: relative;
+  max-width: var(--phone-card--max-width);
+  width: 100%;
+  margin-block-end: 4rem;
+  margin-inline: 0.625rem; /* to-do: fix responsiveness later */
+  border-radius: var(--card-border-radius);
+  background-color: var(--white);
+  box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.25);
+  padding: var(--card-padding);
+}
+
+/* ear speaker white board */
+.phone::before {
+  content: "";
+  position: absolute;
+  width: 8.0625rem;
+  height: 1.8125rem;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--white);
+  border-radius: 0 0 0.875rem 0.875rem;
+  z-index: 5;
+}
+
+.phone__inner-phone {
+  border: 0.0625rem solid var(--card-inner-border-color);
+  border-radius: var(--card-inner-border-radius);
+  background-color: var(--light-grayish-violet-app-background);
+  overflow: hidden;
+}
+
+.phone__nav-bar-profile {
+  border-radius: 1.25rem 1.25rem 0.375rem 0.375rem;
+  background: var(--bg-nav-bar-profile);
+  box-shadow: 0px 0px 13px 0px rgba(62, 39, 83, 0.25);
+  padding-block: 1.875rem 0.75rem;
+}
+
+.phone__nav-bar-profile-container {
+  max-width: 12.25rem; /* 196px */
+  margin-inline: 0.96875rem;
+  display: grid;
+  gap: 0.5rem;
+  row-gap: 0.125rem;
+  align-items: center;
+  grid-template-columns: 0.25rem auto 1fr 0.125rem;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "left-btn   photo   name    right-btn"
+    "left-btn   photo   status  right-btn";
+}
+
+.phone__profile-left-btn {
+  grid-area: left-btn;
+  width: 0.25rem;
+  height: 0.625rem;
+  object-fit: cover;
+}
+
+.phone__avatar-img {
+  grid-area: photo;
+  border: 0.0625rem solid var(--white);
+  border-radius: 50%;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.phone__profile-name {
+  line-height: 0.8125rem;
+  grid-area: name;
+  font-size: var(--profile-name-font-size);
+  color: var(--white);
+}
+
+.phone__profile-status {
+  line-height: 0.5625rem;
+  grid-area: status;
+  font-size: var(--profile-status-font-size);
+  color: var(--pale-violet-sub-heading-at-the-top-of-the-app-UI);
+}
+
+.phone__profile-right-btn {
+  grid-area: right-btn;
+  width: 0.125rem;
+  height: 0.5rem;
+  object-fit: cover;
+}
+
+.phone__chat-container {
+  padding: 0.6875rem 0.46875rem 0.630625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat--baloon-left,
+.chat--baloon-right,
+.payment {
+  max-width: 8rem; /* 128px */
+  padding: 0.375rem 0.5rem;
+  font-size: var(--text-chat-font-size);
+  line-height: var(--text-chat-line-height);
+}
+
+.chat--baloon-left {
+  border-radius: 0.625rem 0.625rem 0.625rem 0.25rem;
+  color: var(--moderate-violet-chat-on-the-left);
+  background-color: var(--bg-text-left-chat-violet);
+}
+
+.chat--baloon-right {
+  border-radius: 0.625rem 0.625rem 0.25rem 0.625rem;
+  background: var(--white);
+  color: var(--desaturated-dark-violet-chat-on-the-right);
+  box-shadow: 0 0.625rem 0.3125rem -0.3125rem rgba(62, 39, 83, 0.05);
+  align-self: self-end;
+}
+
+.chat--baloon-right + .chat--baloon-right,
+.chat--baloon-left + .chat--baloon-left {
+  margin-block-start: 0.5rem;
+}
+
+.phone__chat-photos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 2.5rem);
+  justify-content: end;
+  gap: 0.5rem;
+  margin-block: 1rem 0.5rem;
+}
+
+.phone__chat-photos-container img {
+  border-radius: 0.625rem;
+  width: 2.5rem;
+  aspect-ratio: 1;
+}
+
+.phone__chat-text-four {
+  margin-block-end: 1rem;
+}
+
+/* ### animations */
+
+.chat--baloon-left,
+.chat--baloon-right {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.phone__chat-text-one { 
+  animation-delay: 0s; 
+}
+
+.phone__chat-text-two { 
+  animation-delay: 0.5s; 
+}
+
+.phone__chat-photos-container {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 0.5s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Imagens */
+.phone__chat-photos-container img {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 0.5s forwards;
+}
+
+.phone__chat-photos-container img:nth-child(1) { 
+  animation-delay: 1.5s; 
+}
+
+.phone__chat-photos-container img:nth-child(2) { 
+  animation-delay: 2s; 
+}
+
+.phone__chat-photos-container img:nth-child(3) { 
+  animation-delay: 2.5s; 
+}
+
+.phone__chat-text-three { 
+  animation-delay: 3s; 
+}
+
+.phone__chat-text-four { 
+  animation-delay: 3.5s; 
+}
+
+.phone__chat-text-five { 
+  animation-delay: 4s; 
+}
+
+.phone__chat-text-six { 
+  animation-delay: 4.5s; 
+}
+
+.phone__chat-text-seven { 
+  animation-delay: 5s;
+}
+
+/* ### END animations */
+
+/* ### components */
+
+.payment {
+  --8px-to-rem: 0.5rem;
+  max-width: 10rem; /* 160px */
+  display: grid;
+  grid-template-columns: 0.75rem 2fr 1fr;
+  gap: var(--8px-to-rem);
+  padding-block: 0.625rem;
+  margin-block-start: var(--8px-to-rem);
+  background: var(--bg-chat-text-payment-180);
+  box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.05);
+  color: var(--white);
+}
+
+.circle-shape {
+  width: 0.75rem;
+  aspect-ratio: 1;
+  border: 0.0625rem solid var(--very-light-magenta-radio-button-outline);
+  border-radius: 50%;
+}
+
+.price-job {
+  font-size: var(--price-job-font-size);
+  font-weight: var(--font-weight-bold);
+  justify-self: center;
+}
+
+/* ### END components */
+
+.phone__message-field {
+  background-color: var(--white);
+  margin-block-start: 1rem;
+  border-radius: var(--message-field-border-radius);
+  position: relative;
+}
+
+.phone__message-field::after {
+  position: absolute;
+  content: '';
+  top: 0.3025rem;
+  right: 0.295625rem;
+  width: 1.5625rem; /* 25px */
+  aspect-ratio: 1;
+  background: url(../images/message-btn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.phone__message-field p {
+  font-size: var(--place-holder-font-size);
+  line-height: var(--text-chat-line-height);
+  letter-spacing: -0.004375rem; /* 0.07px */
+  color: var(--grayish-blue-placeholder-text);
+  margin: 0.81625rem 0 0.615625rem 1.21375rem; /* 13.06px 0 9.85px 19.42px */
+}
+
+/* 768px */
+@media (min-width: 48rem) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1.5625rem;
+    padding: 0;
+  }
+
+  body::before {
+    bottom: 12.50%;
+    right: 70.83%;
+  }
+
+  body::after {
+    top: 14.87%;
+    left: 77.29%;
+  }
+
+  article, .phone {
+    margin: 0
+  }
+
+  .phone {
+    flex-shrink: 0;
+  }
+
+  article {
+    text-align: left;
+  }
+}

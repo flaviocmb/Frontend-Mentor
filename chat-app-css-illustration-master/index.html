@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Chat App CSS Ilustration</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+    .attribution { font-size: 0.6875rem; text-align: center; padding: 0.625rem; }
+    .attribution a { text-decoration: none; color: hsl(228, 45%, 44%); }
+    .attribution a:hover, .attribution a:focus { text-decoration: underline; color: inherit; }
+  </style>
+</head>
+<body>
+
+  <main>
+    <section class="phone">
+      <div class="phone__inner-phone">
+        <div class="phone__nav-bar-profile">
+          <div class="phone__nav-bar-profile-container">
+            <img class="phone__profile-left-btn" src="./images/arrow-left.svg" alt="">
+            <img class="phone__avatar-img" src="./images/avatar.jpg" width="24" height="24" alt="profile avatar">
+            <p class="phone__profile-name">Samuel Green</p>
+            <p class="phone__profile-status">Available to Walk</p>
+            <img class="phone__profile-right-btn" src="./images/three-dots.svg" alt="">
+          </div>
+        </div>
+        <div class="phone__chat-container">
+          <p class="phone__chat-text-one chat--baloon-left">That sounds great. I’d be happy with that.</p>
+          <p class="phone__chat-text-two chat--baloon-left">Could you send over some pictures of your dog, please?</p>
+          <div class="phone__chat-photos-container">
+            <img src="./images/dog-image-1.jpg" width="40" height="40" alt="">
+            <img src="./images/dog-image-2.jpg" width="40" height="40" alt="">
+            <img src="./images/dog-image-3.jpg" width="40" height="40" alt="">
+          </div>
+          <p class="phone__chat-text-three chat--baloon-right">Here are a few pictures. She’s a happy girl!</p>
+          <p class="phone__chat-text-four chat--baloon-right">Can you make it?</p>
+          <p class="phone__chat-text-five chat--baloon-left">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+          <div class="phone__chat-text-six chat--baloon-left payment">
+            <div class="circle-shape"></div>
+            <p>30 minute walk</p>
+            <p class="price-job">$29</p>
+          </div>
+          <div class="phone__chat-text-seven chat--baloon-left payment">
+            <div class="circle-shape"></div>
+            <p>1 hour walk</p>
+            <p class="price-job">$49</p>
+          </div>
+          <div class="phone__message-field">
+            <p>Type a message…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article>
+      <h1>Simple booking</h1>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
+      </p>
+    </article>
+  </main>
+  
+  <footer style="display: none;">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer" title="Opens new tab">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/flaviocmb" target="_blank" rel="noopener noreferrer" title="Opens new tab">Flavio Cesar</a>.
+    </div>
+  </footer>
+</body>
+</html>
