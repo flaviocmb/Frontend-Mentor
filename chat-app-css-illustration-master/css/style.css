@@ -134,14 +134,14 @@ body::after {
   content: "";
   width: 31.875rem; /* 510px */
   height: 63.625rem; /* 1018px */
-  background-repeat: no-repeat;
-  background-size: cover;
   z-index: -1;
 }
 
 body::before {
   background: url(../images/background-violet-top.svg);
   background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
   right: 49.86%;
   bottom: 45.61%;
 }
@@ -149,6 +149,8 @@ body::before {
 body::after {
   background: url(../images/background-violet-desaturated-bottom.svg);
   background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   left: 50.13%;
   top: 45.61%;
 }
