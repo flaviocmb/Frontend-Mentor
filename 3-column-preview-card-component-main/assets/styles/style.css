@@ -109,18 +109,7 @@ button {
   border-radius: 100px;
   cursor: pointer;
   transition: all .3s ease;
-}
-
-.card-sedan button {
-  color: var(--bright-orange);
-}
-
-.card-suv button {
-  color: var(--dark-cyan);
-}
-
-.card-luxury button {
-  color: var(--very-dark-cyan);
+  mix-blend-mode: screen;
 }
 
 img {
