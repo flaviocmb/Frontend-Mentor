@@ -4,9 +4,9 @@
 
 Put your layout skills to the test with this HTML & CSS landing page challenge. This challenge includes a design for hover states.
 
-## Dica legal que aprendi para construir landing pages muito altas
+## Cool Tip I Learned for Building Really Tall Landing Pages
 
-Quando eu atualizo a página do navegador, constantemente sou alçado para o topo da página e toda vez precisava rolar novamente para baixo. Adicione o código javascript ao final do body.
+Every time I refresh the browser page, I keep getting shot back to the top, and I always have to scroll down again. Just add this JavaScript code at the end of the body.
 
 ```javascript
 <script>
@@ -31,7 +31,7 @@ window.onscroll = function() {
 
 ## DRY CSS code
 
-Tentei aplicar ao máximo as ideias do DRY - Don't Repeat Yourself. Acredito que com o tempo e experiência aprenderei mais sobre a melhor abordagem de organização (e isso inclui DRY) apenas olhando o layout da página e/ou acessando um design file se existir.
+I tried to apply DRY (Don't Repeat Yourself) as much as possible. I think with time and experience, I'll learn more about the best way to organize things (including DRY) just by looking at the layout or checking a design file if there’s one. There are still some ways to combine existing code in different media queries using clamp to make the responsiveness super smooth. I’ll tweak it over time.
 
 ## First time using a pseudo-class (descontinuado)
 
@@ -45,9 +45,9 @@ That's my first time using a little more complex and advanced CSS pseudo-class `
 
 Eu precisava [adicionar margem](./pseudo-class.png) apenas no primeiro e segundo parágrafos.
 
-## Mantendo o aspect ratio de imagens
+## Keeping image aspect ratio
 
-Because I explicitly (coz of design file) set width and height, `object-fit: contain;` keeps aspect ratio on small screen sizes.
+Because I explicitly set the width and height (based on the design), `object-fit: contain;` keeps the aspect ratio on smaller screens.
 
 ```css
 .features img {
@@ -60,11 +60,11 @@ Because I explicitly (coz of design file) set width and height, `object-fit: con
 
 ## box-shadow and screen shrink
 
-When the screen shrinks you might find [this problem](./box-shadow-problem.png): A imagem encolhe (coz of responsiveness) e se desloca do próprio eixo e então fica uma borda sombreada.
+When the screen shrinks, you might notice [this problem](https://raw.githubusercontent.com/flaviocmb/Frontend-Mentor/refs/heads/main/clipboard-landing-page-master/assets/info/box-shadow-problem.png): the image shrinks (because of responsiveness) and shifts out of its axis, creating a shadow border.
 
-Isso está ocorrendo porque eu adicionei dimensões explícitas à imagem (para atender ao design).
+This happens because I added explicit dimensions to the image (to match the design).
 
-Para resolver, eu tive que envolver a imagem em uma caixa (div) e adicionar o box-shadow nesta caixa, dessa maneira o box-shadow "segue" o encolhimento da imagem. Veja:
+To fix this, I wrapped the image in a box (div) and added the box-shadow to that box, so the box-shadow "follows" the image as it shrinks. Check it out:
 
 ```css
 .access .box-shadow {
@@ -82,13 +82,13 @@ Para resolver, eu tive que envolver a imagem em uma caixa (div) e adicionar o bo
 }
 ```
 
-Observe com atenção que é fundamental adicionar max-width e max-height para manter a responsividade. [Agora parece bom](./box-shadow-solved.png).
+Make sure to add max-width and max-height to keep it responsive. [Now it looks good](https://raw.githubusercontent.com/flaviocmb/Frontend-Mentor/refs/heads/main/clipboard-landing-page-master/assets/info/box-shadow-solved.png).
 
 Is there another clever way to solver this? leave a comment please.
 
 ## This is not a simple hover
 
-Acredito que esse seja um dos grandes desafios desse projecto (incluído na descrição do projeto). If you wander how to do that hover on the buttons, the **[NTF Preview Card Component](https://www.frontendmentor.io/solutions/nft-preview-card-component-hhBAmiQbU8)** has this same way to hover something. In this project you will have to work with pseudo-element and build a new color na frente da cor do cyan.
+I think this is one of the big challenges of this project (mentioned in the project description). If you wander how to I did that hover on the buttons, the **[NTF Preview Card Component](https://www.frontendmentor.io/solutions/nft-preview-card-component-hhBAmiQbU8)** has the same hover effect. In this project, you’ll need to work with pseudo-elements and create a new color in front of the cyan color.
 
 ```css
 .btn-green {
@@ -109,7 +109,7 @@ Acredito que esse seja um dos grandes desafios desse projecto (incluído na desc
 }
 ```
 
-E se você quiser adicionar transition, isso é um pouco complicado porque você configurou opacidade na cor do background, assim você não pode usar a propriedade `opacity: 1;` diretamente no pseudo-elemento. Veja como deve fica:
+If you want to add a transition, it gets a bit tricky since you set the background color’s opacity, so you can’t just use `opacity: 1;` directly on the pseudo-element. Here’s how it should look:
 
 ```css
 .btn-green::after {
@@ -132,9 +132,9 @@ E se você quiser adicionar transition, isso é um pouco complicado porque você
 }
 ```
 
-## Minha decisão sobre responsividade da imagem do computador
+## My decision about responsiveness on the decorative computer image
 
-Sobre a sessão da imagem do computador de um lado e os textos do outro, eu decidi manter o computador colado na borda esquerda da tela em todos os tamanhos de tela a partir de 768px. A imagem do computador mantem o **aspect-ratio** e alcança metade da tela pois eu defini isso no grid.
+About the section with the computer image on one side and the text on the other, I decided to keep the computer stuck to the left edge of the screen on all screen sizes from 768px up. The computer image maintains its **aspect-ratio** and takes up half the screen because I set that in the grid.
 
 ```css
 .features__image-and-features {
@@ -144,16 +144,35 @@ Sobre a sessão da imagem do computador de um lado e os textos do outro, eu deci
 }
 ```
 
-Uma outra escolha poderia ser manter a imagem no tamanho original em todas as telas a partir de 768px, [mas o conteúdo da imagem ficaria mais da metade para fora da tela](./another-choice.png).
+Another option could’ve been to keep the image at its original size on all screens from 768px, [but the image content would stick out more than half off the screen](https://raw.githubusercontent.com/flaviocmb/Frontend-Mentor/refs/heads/main/clipboard-landing-page-master/assets/info/another-choice.png).
 
 ## The workflow list
 
-Observe a [imagem do projeto](./the-workflow-list.png) e você entenderá que é necessário definir espaço entre cada item de lista, centralizá-los e quando a tela for pequena, vai precisar diminuir o tamanho de cada item de lista.
+Check the [project image](https://raw.githubusercontent.com/flaviocmb/Frontend-Mentor/refs/heads/main/clipboard-landing-page-master/assets/info/the-workflow-list.png) and you’ll see that it’s necessary to define space between each list item, center them, and when the screen is small, you’ll need to decrease the size of each list item.
 
-Eu utilizei `flex: 1;` para organizar o espaço democrático de cada item. Você aprenderá mais sobre isso no projeto [3 column preview card component](https://www.frontendmentor.io/solutions/3-column-preview-card-component-flexgrid-Y_T8B8Gv2Y).
+I used `flex: 1;` to give equal space to each item. This is something I did in this project [3 column preview card component](https://www.frontendmentor.io/solutions/3-column-preview-card-component-flexgrid-Y_T8B8Gv2Y).
 
 ```css
 .workflow__list li {
   flex: 1;
 }
 ```
+
+## The partners/customers list
+
+Sometimes we prefer some images to shrink, like in my decision about the access section image. In this case, I chose not to reduce the size of the partner/customer images. Since they’re in a list, I used `flex-shrink: 0;` to prevent these images from shrinking. When the screen size decreases, I opted to gradually reduce the gap between the images, and I think it looks nice. When there’s no more space as the screen shrinks, `flex-flow: wrap;` helps to break the line. What do you think?
+
+```css
+.customer-logos__list {
+  flex-flow: wrap;
+  gap: clamp(2.5rem, -11.3675rem + 21.668vw, 5.9669rem);
+}
+
+.customer-logos__list li {
+    flex-shrink: 0;
+}
+```
+
+Something similar happens with the footer links. Check those out too!
+
+These are some comments about my experience with this project. Feel free to comment on anything.
