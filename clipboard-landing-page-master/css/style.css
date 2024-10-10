@@ -2,11 +2,11 @@
 
   /* ## content properties */
 
-  --max-width-mobile-content: 19.4375rem; /* 311px */
-  --max-width-desktop-content: clamp(37.5rem, 13.125rem + 50.7813vw, 45.625rem); /* 768 til 1024 - 600 til 730 */
-  --max-width-mobile-content-hero-section: clamp(19.4375rem, 2.1583rem + 73.7245vw, 37.5rem); /* 311px 600px */
+  --max-width-mobile-content: 19.4375rem;
+  --max-width-desktop-content: clamp(37.5rem, 13.125rem + 50.7813vw, 45.625rem);
+  --max-width-mobile-content-hero-section: clamp(19.4375rem, 2.1583rem + 73.7245vw, 37.5rem);
   --max-width-button-mobile: 19.4375rem;
-  --max-width-mobile-content-feature-section: 19.5rem; /* 312px */
+  --max-width-mobile-content-feature-section: 19.5rem;
   --h2-margin-block-end-mobile: 1rem;
   --h2-margin-block-end-desktop: 1.1875rem;
 
@@ -38,7 +38,7 @@
   --h3-font-size-desktop-mobile: 1.5rem;
   --text-font-size-desktop-mobile: 1rem;
   --description-font-size-desktop: 1.125rem;
-  --hero-description-font-size-desktop: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem); /* 768 til 1024 - 16 til 20 */
+  --hero-description-font-size-desktop: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
 
   /* ### font-family */
   --font-callback: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
@@ -352,12 +352,10 @@ object-fit keeps aspect ratio on small screen sizes
 }
 
 .workflow img[src*="icon-text"] {
-  /* margin-block-end: 2.75rem; */
   margin-block-end: 3rem;
 }
 
 .workflow img[src*="icon-preview"] {
-  /* margin-block-end: 2.756875rem; */
   margin-block-end: 3.015625rem;
 }
 
@@ -572,11 +570,11 @@ object-fit keeps aspect ratio on small screen sizes
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
-    gap: clamp(2.5rem, -4.0625rem + 13.6719vw, 6.875rem); /* 40px til 110px / 768 til 1280 */
+    gap: clamp(2.5rem, -4.0625rem + 13.6719vw, 6.875rem);
   }
 
   .features img {
-    width: clamp(26rem, -5.5rem + 65.625vw, 47rem); /* 416w til 752w */
+    width: clamp(26rem, -5.5rem + 65.625vw, 47rem);
     height: auto;
     position: relative;
     left: -2rem;
@@ -586,7 +584,7 @@ object-fit keeps aspect ratio on small screen sizes
 
   .features__list {
     gap: clamp(1.5rem, -1.5rem + 6.25vw, 3.5rem); /* 24px 56px */
-    max-width: clamp(16.25rem, 7.8125rem + 17.5781vw, 21.875rem); /* 260px (384 - 40 - 84) til 350px / 768 til 1280 */
+    max-width: clamp(16.25rem, 7.8125rem + 17.5781vw, 21.875rem);
     text-align: start;
   }
 
@@ -612,7 +610,7 @@ object-fit keeps aspect ratio on small screen sizes
   .workflow__list {
     flex-direction: row;
     gap: 1.875rem;
-    max-width: clamp(46.25rem, -23.125rem + 144.5313vw, 69.375rem); /* 740px 1110px - 768 til 1024 */
+    max-width: clamp(46.25rem, -23.125rem + 144.5313vw, 69.375rem);
     width: 90%;
     margin-inline: auto;
   }
