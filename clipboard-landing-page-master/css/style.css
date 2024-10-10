@@ -649,6 +649,10 @@ object-fit keeps aspect ratio on small screen sizes
     padding-block: 4.6875rem 9.375rem;
   }
 
+  .footer {
+    padding-block: 2.25rem;
+  }
+
   .footer__container {
     display: flex;
     justify-content: center;
