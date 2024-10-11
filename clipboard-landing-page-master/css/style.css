@@ -585,7 +585,9 @@ object-fit keeps aspect ratio on small screen sizes
   .features__list {
     gap: clamp(1.5rem, -1.5rem + 6.25vw, 3.5rem); /* 24px 56px */
     max-width: clamp(16.25rem, 7.8125rem + 17.5781vw, 21.875rem);
+    height: 100%;
     text-align: start;
+    padding-block-start: 4.25rem; /* 68px */
   }
 
   .access {
